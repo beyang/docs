@@ -1,0 +1,231 @@
+NODE(1)                                                        Node.js                                                       NODE(1)
+
+NAME
+       nodejs - Server-side JavaScript runtime
+
+SYNOPSIS
+       nodejs [options] [v8 options] [script.js | -e "script" | - ] [--] [arguments]
+       node debug [script.js | -e "script" | <host>:<port>] ...
+       node [--v8-options]
+
+       Execute without arguments to start the REPL.
+
+DESCRIPTION
+       Node.js  is  a  set of libraries for JavaScript which allows it to be used outside of the browser. It is primarily focused on
+       creating simple, easy to build network clients and servers.
+
+OPTIONS
+       -v, --version
+              Print node's version.
+
+       -h, --help
+              Print node command line options.  The output of this option is less detailed than this document.
+
+       -e, --eval "script"
+              Evaluate the following argument as JavaScript.
+
+       -p, --print "script"
+              Identical to -e but prints the result.
+
+       -c, --check
+              Syntax check the script without executing.
+
+       -i, --interactive
+              Open the REPL even if stdin does not appear to be a terminal.
+
+       -r, --require module
+              Preload the specified module at startup. Follows `require()`'s module resolution rules. module may be either a path to
+              a file, or a node module name.
+
+       --inspect[=[host:]port]
+              Activate inspector on host:port. Default is 127.0.0.1:9229.
+
+              V8  Inspector  integration allows attaching Chrome DevTools and IDEs to Node.js instances for debugging and profiling.
+              It uses the Chrome Debugging Protocol.
+
+       --inspect-brk[=[host:]port]
+              Activate inspector on host:port and break at start of user script.
+
+       --inspect-port=[host:]port
+              Set the host:port to be used when the inspector is activated.
+
+       --no-deprecation
+              Silence deprecation warnings.
+
+       --trace-deprecation
+              Print stack traces for deprecations.
+
+       --throw-deprecation
+              Throw errors for deprecations.
+
+       --pending-deprecation
+              Emit pending deprecation warnings.
+
+       --no-warnings
+              Silence all process warnings (including deprecations).
+
+       --napi-modules
+              Enable loading native modules compiled with the ABI-stable Node.js API (N-API) (experimental).
+
+       --abort-on-uncaught-exception
+              Aborting instead of exiting causes a core file to be generated for analysis.
+
+       --trace-warnings
+              Print stack traces for process warnings (including deprecations).
+
+       --redirect-warnings=file
+              Write process warnings to the given file instead of printing to stderr.
+
+       --trace-sync-io
+              Print a stack trace whenever synchronous I/O is detected after the first turn of the event loop.
+
+       --force-async-hooks-checks
+              Enables runtime checks for `async_hooks`. These can also be enabled dynamically by enabling one of  the  `async_hooks`
+              hooks.
+
+       --trace-events-enabled
+              Enables the collection of trace event tracing information.
+
+       --trace-event-categories categories
+              A  comma  separated list of categories that should be traced when trace event tracing is enabled using --trace-events-
+              enabled.
+
+       --zero-fill-buffers
+              Automatically zero-fills all newly allocated Buffer and SlowBuffer instances.
+
+       --preserve-symlinks
+              Instructs the module loader to preserve symbolic links when resolving and caching modules.
+
+       --track-heap-objects
+              Track heap object allocations for heap snapshots.
+
+       --prof-process
+              Process V8 profiler output generated using the V8 option --prof
+
+       --v8-options
+              Print V8 command line options.
+
+              Note: V8 options allow words to be separated by both dashes (-) or underscores (_).
+
+              For example, --stack-trace-limit is equivalent to --stack_trace_limit
+
+       --v8-pool-size=num
+              Set v8's thread pool size which will be used to allocate background jobs.  If set to 0 then V8 will choose  an  appro‐
+              priate size of the thread pool based on the number of online processors. If the value provided is larger than v8's max
+              then the largest value will be chosen.
+
+       --tls-cipher-list=list
+              Specify an alternative default TLS cipher list. (Requires Node.js to be built with crypto support. (Default))
+
+       --enable-fips
+              Enable FIPS-compliant crypto at startup. (Requires Node.js to be built with ./configure --openssl-fips)
+
+       --force-fips
+              Force FIPS-compliant crypto on startup. (Cannot be disabled from script code.)  (Same requirements as --enable-fips)
+
+       --openssl-config=file
+              Load an OpenSSL configuration file on startup. Among other uses, this can be used to enable FIPS-compliant  crypto  if
+              Node.js is built with ./configure --openssl-fips.
+
+       --use-openssl-ca,--use-bundled-ca
+              Use  OpenSSL's  default  CA  store or use bundled Mozilla CA store as supplied by current Node.js version. The default
+              store is selectable at build-time.
+
+              Using OpenSSL store allows for external modifications of the store. For most Linux and BSD distributions,  this  store
+              is  maintained  by  the  distribution maintainers and system administrators. OpenSSL CA store location is dependent on
+              configuration of the OpenSSL library but this can be altered at runtime using environment variables.
+
+              The bundled CA store, as supplied by Node.js, is a snapshot of Mozilla CA store that is fixed at release time.  It  is
+              identical on all supported platforms.
+
+              See SSL_CERT_DIR and SSL_CERT_FILE.
+
+       --icu-data-dir=file
+              Specify ICU data load path. (overrides NODE_ICU_DATA)
+
+       -      Alias  for stdin, analogous to the use of - in other command line utilities, meaning that the script will be read from
+              stdin, and the rest of the options are passed to that script.
+
+       --     Indicate the end of node options. Pass the rest of the arguments to the script.
+
+              If no script filename or eval/print script is supplied prior to this, then the next argument will be used as a  script
+              filename.
+
+ENVIRONMENT VARIABLES
+       NODE_DEBUG=module[,...]
+              ´,´-separated list of core modules that should print debug information.
+
+       NODE_DISABLE_COLORS=1
+              When set to 1, colors will not be used in the REPL.
+
+       NODE_EXTRA_CA_CERTS=file
+              When  set,  the  well  known "root" CAs (like VeriSign) will be extended with the extra certificates in file. The file
+              should consist of one or more trusted certificates in PEM format. A message will be emitted (once) with  process.emit‐
+              Warning() if the file is missing or misformatted, but any errors are otherwise ignored.
+
+       NODE_ICU_DATA=file
+              Data path for ICU (Intl object) data. Will extend linked-in data when compiled with small-icu support.
+
+       NODE_NO_WARNINGS=1
+              When set to 1, process warnings are silenced.
+
+       NODE_NO_HTTP2=1
+              When set to 1, the http2 module is suppressed.
+
+       NODE_OPTIONS=options...
+              A  space-separated  list of command line options. options... are interpreted as if they had been specified on the com‐
+              mand line before the actual command line (so they can be overridden).  Node will exit with an error if an option  that
+              is not allowed in the environment is used, such as -p or a script file.
+
+       NODE_PATH=path[:...]
+              ´:´-separated list of directories prefixed to the module search path.
+
+       NODE_PENDING_DEPRECATION=1
+              When set to 1, emit pending deprecation warnings.
+
+       NODE_REPL_HISTORY=file
+              Path  to  the file used to store the persistent REPL history. The default path is ~/.node_repl_history, which is over‐
+              ridden by this variable. Setting the value to an empty string ("" or " ") disables persistent REPL history.
+
+       OPENSSL_CONF=file
+              Load an OpenSSL configuration file on startup. Among other uses, this can be used to enable FIPS-compliant  crypto  if
+              Node.js is built with ./configure --openssl-fips.
+
+              If the --openssl-config command line option is used, the environment variable is ignored.
+
+       SSL_CERT_DIR=dir
+              If --use-openssl-ca is enabled, this overrides and sets OpenSSL's directory containing trusted certificates.
+
+       SSL_CERT_FILE=file
+              If --use-openssl-ca is enabled, this overrides and sets OpenSSL's file containing trusted certificates.
+
+       NODE_REDIRECT_WARNINGS=file
+              Write  process  warnings  to  the given file instead of printing to stderr.  (equivalent to using the --redirect-warn‐
+              ings=file command-line argument).
+
+BUGS
+       Bugs are tracked in GitHub Issues: https://github.com/nodejs/node/issues
+
+AUTHORS
+       Written and maintained by 1000+ contributors: https://github.com/nodejs/node/blob/master/AUTHORS
+
+COPYRIGHT
+       Copyright Node.js contributors. Node.js is available under the MIT license.
+
+       Node.js   also   includes   external   libraries   that   are    available    under    a    variety    of    licenses.    See
+       https://github.com/nodejs/node/blob/master/LICENSE for the full license text.
+
+RESOURCES AND DOCUMENTATION
+       Website: https://nodejs.org/
+
+       Documentation: https://nodejs.org/api/
+
+       GitHub repository & Issue Tracker: https://github.com/nodejs/node
+
+       Mailing list: http://groups.google.com/group/nodejs
+
+       IRC (general questions): chat.freenode.net #node.js (unofficial)
+
+       IRC (Node.js core development): chat.freenode.net #node-dev
+
+Node.js                                                         2016                                                         NODE(1)
