@@ -2,8 +2,7 @@ This repository contains a dump of documentation from various free and open-sour
 
 ## Licensing and attribution
 
-All docs are in the `docdump` directory. Within the `docdump` directory, the documentation comes
-from a variety of sources:
+Within the `docdump` directory, the documentation comes from these sources:
 
 * The `man1` and `man8` directories were taken from the Ubuntu 18.04 man pages. These are available
   at the [Ubuntu Manpage Repository](http://manpages.ubuntu.com/manpages/bionic/). Man pages are
@@ -19,3 +18,8 @@ from a variety of sources:
   * `docker` ([source](https://github.com/docker/docker-ce), [license](https://github.com/docker/docker-ce/blob/master/components/cli/LICENSE))
   * `psql` ([source](https://github.com/postgres/postgres/), [license](https://github.com/postgres/postgres/blob/master/COPYRIGHT))
   * `hash` ([source](https://github.com/freebsd/freebsd), [license](https://github.com/freebsd/freebsd/blob/master/COPYRIGHT))
+
+Within the `generate_special_vars` directory, the documentation comes from these sources:
+
+* `gnu.ts`: ([source](https://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html), [license](https://www.gnu.org/software/bash/manual/bash.html#GNU-Free-Documentation-License))
+* `tldp.ts`: ([source](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html), [license](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html))
