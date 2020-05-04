@@ -1,0 +1,19 @@
+{
+  "name": "generate_special_vars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "node": "^13.10.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "run-generate": "./node_modules/node/bin/node ./dist",
+    "generate": "yarn run build && yarn run run-generate"
+  }
+}
