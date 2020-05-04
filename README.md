@@ -2,7 +2,7 @@ This repository contains a dump of documentation from various free and open-sour
 
 ## Licensing and attribution
 
-All docs are in the `mandump` directory. Within the `mandump` directory, the documentation comes
+All docs are in the `docdump` directory. Within the `docdump` directory, the documentation comes
 from a variety of sources:
 
 * The `man1` and `man8` directories were taken from the Ubuntu 18.04 man pages. These are available

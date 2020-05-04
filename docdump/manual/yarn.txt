@@ -7,7 +7,7 @@
 
     --cache-folder <path>               specify a custom folder that must be used to store the yarn cache
     --check-files                       install will verify file tree of packages for consistency
-    --cwd <cwd>                         working directory to use (default: /home/beyang/src/github.com/beyang/codenav-bash/generate-man/mandump)
+    --cwd <cwd>                         working directory to use
     --disable-pnp                       disable the Plug'n'Play installation
     --emoji [bool]                      enable emoji in output (default: false)
     --enable-pnp, --pnp                 enable the Plug'n'Play installation

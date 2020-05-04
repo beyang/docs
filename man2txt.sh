@@ -5,7 +5,7 @@
 cd $(dirname "${BASH_SOURCE[0]}")
 
 MAN_FILES="$(ls /usr/share/man/man1 | grep '^[a-z]*\.1\.gz$')"
-OUT_DIR="mandump/man1"
+OUT_DIR="docdump/man1"
 for FILE in $MAN_FILES; do
     echo $FILE
     base="$(basename $FILE .1.gz)"
@@ -14,7 +14,7 @@ for FILE in $MAN_FILES; do
 done
 
 MAN_FILES="$(ls /usr/share/man/man8 | grep '^[a-z]*\.8\.gz$')"
-OUT_DIR="mandump/man8"
+OUT_DIR="docdump/man8"
 for FILE in $MAN_FILES; do
     echo $FILE
     base="$(basename $FILE .8.gz)"

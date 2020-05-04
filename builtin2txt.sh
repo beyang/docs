@@ -62,7 +62,7 @@ BUILTINS=(
 'unset'
 'wait'
 )
-OUT_DIR="mandump/builtin"
+OUT_DIR="docdump/builtin"
 mkdir -p $OUT_DIR
 for BUILTIN in ${BUILTINS[@]}; do
     echo $BUILTIN
