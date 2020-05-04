@@ -23,3 +23,4 @@ Within the `generate_special_vars` directory, the documentation comes from these
 
 * `gnu.ts`: ([source](https://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html), [license](https://www.gnu.org/software/bash/manual/bash.html#GNU-Free-Documentation-License))
 * `tldp.ts`: ([source](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html), [license](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html))
+* `generated/vars.json` is derived from the union of the two previous files.
