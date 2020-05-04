@@ -1,0 +1,4 @@
+typeset: typeset [-aAfFgilnrtux] [-p] name[=value] ...
+    Set variable values and attributes.
+    
+    A synonym for `declare'.  See `help declare'.
