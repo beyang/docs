@@ -18,6 +18,7 @@ Within the `docdump` directory, the documentation comes from these sources:
   * `docker` ([source](https://github.com/docker/docker-ce), [license](https://github.com/docker/docker-ce/blob/master/components/cli/LICENSE))
   * `psql` ([source](https://github.com/postgres/postgres/), [license](https://github.com/postgres/postgres/blob/master/COPYRIGHT))
   * `hash` ([source](https://github.com/freebsd/freebsd), [license](https://github.com/freebsd/freebsd/blob/master/COPYRIGHT))
+  * `go` ([source](https://github.com/golang/go), [license](https://github.com/golang/go/blob/master/LICENSE))
 
 Within the `generate_special_vars` directory, the documentation comes from these sources:
 
