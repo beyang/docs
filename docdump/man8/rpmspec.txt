@@ -1,4 +1,4 @@
-RPMSPEC(8)                                             System Manager's Manual                                            RPMSPEC(8)
+RPMSPEC(8)                 System Manager's Manual                 RPMSPEC(8)
 
 NAME
        rpmspec - RPM Spec Tool
@@ -11,11 +11,14 @@ SYNOPSIS
        rpmspec {-P|--parse} SPEC_FILE ...
 
 DESCRIPTION
-       rpmspec  is a tool for querying a spec file. More specifically for querying hypothetical packages which would be created from
-       the given spec file. So querying a spec file with rpmspec is similar to querying a package built from that spec file. But  is
-       is  not  identical.  With  rpmspec you can't query all fields which you can query from a built package. E. g. you can't query
-       BUILDTIME with rpmspec for obvious reasons. You also cannot query other fields automatically generated during a  build  of  a
-       package like auto generated dependencies.
+       rpmspec  is  a  tool  for  querying a spec file. More specifically for
+       querying hypothetical packages which would be created from  the  given
+       spec file. So querying a spec file with rpmspec is similar to querying
+       a package built from that spec file. But is  is  not  identical.  With
+       rpmspec  you  can't  query all fields which you can query from a built
+       package. E. g. you can't query BUILDTIME with rpmspec for obvious rea‐
+       sons.  You also cannot query other fields automatically generated dur‐
+       ing a build of a package like auto generated dependencies.
 
    select-options
         [--rpms]
@@ -30,20 +33,25 @@ DESCRIPTION
 
        rpm {-q|--query} [select-options] [query-options]
 
-       You may specify the format that the information should be printed in. To do this, you use the
+       You may specify the format that the information should be printed  in.
+       To do this, you use the
 
         --qf|--queryformat QUERYFMT
 
-       option, followed by the QUERYFMT format string.  See rpm(8) for details.
+       option,  followed  by  the  QUERYFMT  format  string.   See rpm(8) for
+       details.
 
    SELECT OPTIONS
         --rpms Operate on the all binary package headers generated from spec.
-        --builtrpms Operate only on the binary package headers of packages which would be built from spec. That means ignoring pack‐
-       age headers of packages that won't be built from spec i. e. ignoring package headers of packages without file section.
+        --builtrpms Operate only on the binary package  headers  of  packages
+       which would be built from spec. That means ignoring package headers of
+       packages that won't be built from spec i. e. ignoring package  headers
+       of packages without file section.
         --srpm Operate on the source package header(s) generated from spec.
 
 EXAMPLES
-       Get list of binary packages which would be generated from the rpm spec file:
+       Get list of binary packages which would be generated from the rpm spec
+       file:
 
             $ rpmspec -q rpm.spec
             rpm-4.11.3-3.fc20.x86_64
@@ -81,8 +89,9 @@ SEE ALSO
        rpm2cpio(8),
        rpmbuild(8),
 
-       rpmspec --help - as rpm supports customizing the options via popt aliases it's impossible to guarantee that what's  described
-       in the manual matches what's available.
+       rpmspec --help - as rpm supports  customizing  the  options  via  popt
+       aliases it's impossible to guarantee that what's described in the man‐
+       ual matches what's available.
 
        http://www.rpm.org/ <URL:http://www.rpm.org/>
 
@@ -92,4 +101,4 @@ AUTHORS
        Erik Troan <ewt@redhat.com>
        Panu Matilainen <pmatilai@redhat.com>
 
-Red Hat, Inc                                               29 October 2010                                                RPMSPEC(8)
+Red Hat, Inc                   29 October 2010                     RPMSPEC(8)

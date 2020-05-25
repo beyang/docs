@@ -1,4 +1,4 @@
-UNEXPAND(1)                                                 User Commands                                                UNEXPAND(1)
+UNEXPAND(1)                     User Commands                     UNEXPAND(1)
 
 NAME
        unexpand - convert spaces to tabs
@@ -11,7 +11,8 @@ DESCRIPTION
 
        With no FILE, or when FILE is -, read standard input.
 
-       Mandatory arguments to long options are mandatory for short options too.
+       Mandatory  arguments  to  long options are mandatory for short options
+       too.
 
        -a, --all
               convert all blanks, instead of just initial blanks
@@ -23,9 +24,11 @@ DESCRIPTION
               have tabs N characters apart instead of 8 (enables -a)
 
        -t, --tabs=LIST
-              use  comma  separated list of tab positions The last specified position can be prefixed with '/' to specify a tab size
-              to use after the last explicitly specified tab stop.  Also a prefix of '+' can be used to align  remaining  tab  stops
-              relative to the last specified tab stop instead of the first column
+              use comma separated list of tab positions  The  last  specified
+              position  can be prefixed with '/' to specify a tab size to use
+              after the last explicitly specified tab stop.  Also a prefix of
+              '+'  can  be  used to align remaining tab stops relative to the
+              last specified tab stop instead of the first column
 
        --help display this help and exit
 
@@ -37,17 +40,20 @@ AUTHOR
 
 REPORTING BUGS
        GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-       Report unexpand translation bugs to <http://translationproject.org/team/>
+       Report   unexpand   translation   bugs   to    <http://translationpro‐
+       ject.org/team/>
 
 COPYRIGHT
-       Copyright    ©    2017    Free    Software    Foundation,    Inc.    License   GPLv3+:   GNU   GPL   version   3   or   later
-       <http://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2017 Free Software Foundation, Inc.  License GPLv3+: GNU
+       GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 SEE ALSO
        expand(1)
 
-       Full documentation at: <http://www.gnu.org/software/coreutils/unexpand>
+       Full  documentation  at:  <http://www.gnu.org/software/coreutils/unex‐
+       pand>
        or available locally via: info '(coreutils) unexpand invocation'
 
-GNU coreutils 8.28                                          January 2018                                                 UNEXPAND(1)
+GNU coreutils 8.28               January 2018                     UNEXPAND(1)

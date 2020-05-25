@@ -1,14 +1,17 @@
-ACCESSDB(8)                                              Manual pager utils                                              ACCESSDB(8)
+ACCESSDB(8)                   Manual pager utils                  ACCESSDB(8)
 
 NAME
-       accessdb - dumps the content of a man-db database in a human readable format
+       accessdb  - dumps the content of a man-db database in a human readable
+       format
 
 SYNOPSIS
        /usr/sbin/accessdb [-d?V] [<index-file>]
 
 DESCRIPTION
-       accessdb will output the data contained within a man-db database in a human readable form.  By default, it will dump the data
-       from /var/cache/man/index.<db-type>, where <db-type> is dependent on the database library in use.
+       accessdb will output the data contained within a man-db database in  a
+       human  readable  form.   By  default,  it  will  dump  the  data  from
+       /var/cache/man/index.<db-type>, where <db-type> is  dependent  on  the
+       database library in use.
 
        Supplying an argument to accessdb will override this default.
 
@@ -30,4 +33,4 @@ AUTHOR
        Fabrizio Polacco (fpolacco@debian.org).
        Colin Watson (cjwatson@debian.org).
 
-2.8.3                                                        2018-04-05                                                  ACCESSDB(8)
+2.8.3                             2018-04-05                      ACCESSDB(8)

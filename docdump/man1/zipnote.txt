@@ -1,7 +1,8 @@
-zipnote(1)                                             General Commands Manual                                            zipnote(1)
+zipnote(1)                 General Commands Manual                 zipnote(1)
 
 NAME
-       zipnote - write the comments in zipfile to stdout, edit comments and rename files in zipfile
+       zipnote  -  write the comments in zipfile to stdout, edit comments and
+       rename files in zipfile
 
 SYNOPSIS
        zipnote [-w] [-b path] [-h] [-v] [-L] zipfile
@@ -22,29 +23,34 @@ OPTIONS
        -L     Show software license.
 
 DESCRIPTION
-       zipnote writes the comments in a zipfile to stdout.  This is the default mode.  A second mode allows updating the comments in
-       a zipfile as well as allows changing the names of the files in the zipfile.  These modes are described below.
+       zipnote writes the comments in a  zipfile  to  stdout.   This  is  the
+       default mode.  A second mode allows updating the comments in a zipfile
+       as well as allows changing the names of  the  files  in  the  zipfile.
+       These modes are described below.
 
 EXAMPLES
        To write all comments in a zipfile to stdout use for example
 
             zipnote foo.zip > foo.tmp
 
-       This writes all comments in the zipfile foo.zip to the file foo.tmp in a specific format.
+       This writes all comments in the zipfile foo.zip to the file foo.tmp in
+       a specific format.
 
-       If desired, this file can then be edited to change the comments and then used to update the zipfile.
+       If desired, this file can then be edited to change  the  comments  and
+       then used to update the zipfile.
 
             zipnote -w foo.zip < foo.tmp
 
-       The names of the files in the zipfile can also be changed in this way.  This is done by following lines like
+       The names of the files in the zipfile can also be changed in this way.
+       This is done by following lines like
             "@ name"
        in the created temporary file (called foo.tmp here) with lines like
             "@=newname"
        and then using the -w option as above.
 
 BUGS
-       The temporary file format is rather specific and zipnote is rather picky about it.  It should be easier to change file  names
-       in a script.
+       The temporary file format is rather specific  and  zipnote  is  rather
+       picky about it.  It should be easier to change file names in a script.
 
        Does not yet support large (> 2 GB) or split archives.
 
@@ -54,4 +60,4 @@ SEE ALSO
 AUTHOR
        Info-ZIP
 
-                                                         v3.0 of 8 May 2008                                               zipnote(1)
+                              v3.0 of 8 May 2008                   zipnote(1)

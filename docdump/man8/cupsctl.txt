@@ -1,15 +1,17 @@
-cupsctl(8)                                                   Apple Inc.                                                   cupsctl(8)
+cupsctl(8)                        Apple Inc.                       cupsctl(8)
 
 NAME
        cupsctl - configure cupsd.conf options
 
 SYNOPSIS
-       cupsctl  [ -E ] [ -U username ] [ -h server[:port] ] [ --[no-]debug-logging ] [ --[no-]remote-admin ] [ --[no-]remote-any ] [
+       cupsctl   [   -E   ]   [   -U  username  ]  [  -h  server[:port]  ]  [
+       --[no-]debug-logging ] [ --[no-]remote-admin ] [ --[no-]remote-any ] [
        --[no-]share-printers ] [ --[no-]user-cancel-any ] [ name=value ]
 
 DESCRIPTION
-       cupsctl updates or queries the cupsd.conf file for a server. When no changes are requested, the current configuration  values
-       are written to the standard output in the format "name=value", one per line.
+       cupsctl  updates  or queries the cupsd.conf file for a server. When no
+       changes are requested, the current configuration values are written to
+       the standard output in the format "name=value", one per line.
 
 OPTIONS
        The following options are recognized:
@@ -17,7 +19,8 @@ OPTIONS
        -E   Enables encryption on the connection to the scheduler.
 
        -U username
-            Specifies an alternate username to use when authenticating with the scheduler.
+            Specifies  an  alternate username to use when authenticating with
+            the scheduler.
 
        -h server[:port]
             Specifies the server address.
@@ -32,7 +35,8 @@ OPTIONS
             Enables (disables) printing from any address, e.g., the Internet.
 
        --[no-]share-printers
-            Enables (disables) sharing of local printers with other computers.
+            Enables (disables) sharing of local printers with  other  comput‐
+            ers.
 
        --[no-]user-cancel-any
             Allows (prevents) users to cancel jobs owned by others.
@@ -64,4 +68,4 @@ SEE ALSO
 COPYRIGHT
        Copyright © 2007-2017 by Apple Inc.
 
-30 May 2016                                                     CUPS                                                      cupsctl(8)
+30 May 2016                          CUPS                          cupsctl(8)

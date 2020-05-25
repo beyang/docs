@@ -1,4 +1,4 @@
-AUTOHEADER(1)                                               User Commands                                              AUTOHEADER(1)
+AUTOHEADER(1)                   User Commands                   AUTOHEADER(1)
 
 NAME
        autoheader - Create a template header for configure
@@ -7,8 +7,9 @@ SYNOPSIS
        autoheader [OPTION]... [TEMPLATE-FILE]
 
 DESCRIPTION
-       Create  a template file of C `#define' statements for `configure' to use.  To this end, scan TEMPLATE-FILE, or `configure.ac'
-       if present, or else `configure.in'.
+       Create  a  template  file of C `#define' statements for `configure' to
+       use.  To this end, scan TEMPLATE-FILE, or `configure.ac'  if  present,
+       or else `configure.in'.
 
        -h, --help
               print this help, then exit
@@ -75,19 +76,22 @@ REPORTING BUGS
        General help using GNU software: <http://www.gnu.org/gethelp/>.
 
 COPYRIGHT
-       Copyright  ©  2012  Free   Software   Foundation,   Inc.    License   GPLv3+/Autoconf:   GNU   GPL   version   3   or   later
-       <http://gnu.org/licenses/gpl.html>, <http://gnu.org/licenses/exceptions.html>
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright  © 2012 Free Software Foundation, Inc.  License GPLv3+/Auto‐
+       conf: GNU GPL version 3 or  later  <http://gnu.org/licenses/gpl.html>,
+       <http://gnu.org/licenses/exceptions.html>
+       This  is  free  software:  you are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 SEE ALSO
-       autoconf(1),   automake(1),   autoreconf(1),   autoupdate(1),  autoheader(1),  autoscan(1),  config.guess(1),  config.sub(1),
-       ifnames(1), libtool(1).
+       autoconf(1), automake(1), autoreconf(1), autoupdate(1), autoheader(1),
+       autoscan(1), config.guess(1), config.sub(1), ifnames(1), libtool(1).
 
-       The full documentation for autoheader is maintained as a Texinfo manual.  If the info and autoheader  programs  are  properly
-       installed at your site, the command
+       The  full documentation for autoheader is maintained as a Texinfo man‐
+       ual.  If the info and autoheader programs are  properly  installed  at
+       your site, the command
 
               info autoheader
 
        should give you access to the complete manual.
 
-GNU Autoconf 2.69                                            August 2017                                               AUTOHEADER(1)
+GNU Autoconf 2.69                August 2017                    AUTOHEADER(1)

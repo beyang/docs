@@ -1,4 +1,4 @@
-MEMUSAGESTAT(1)                                       Linux programmer's manual                                      MEMUSAGESTAT(1)
+MEMUSAGESTAT(1)           Linux programmer's manual           MEMUSAGESTAT(1)
 
 NAME
        memusagestat - generate graphic from memory profiling data
@@ -7,11 +7,14 @@ SYNOPSIS
        memusagestat [option]... datafile [outfile]
 
 DESCRIPTION
-       memusagestat creates a PNG file containing a graphical representation of the memory profiling data in the file datafile; that
-       file is generated via the -d (or --data) option of memusage(1).
+       memusagestat  creates a PNG file containing a graphical representation
+       of the memory profiling data in the file datafile; that file is gener‐
+       ated via the -d (or --data) option of memusage(1).
 
-       The red line in the graph shows the heap usage (allocated memory) and the green line shows the stack usage.  The  x-scale  is
-       either the number of memory-handling function calls or (if the -t option is specified) time.
+       The  red line in the graph shows the heap usage (allocated memory) and
+       the green line shows the stack usage.  The x-scale is either the  num‐
+       ber  of  memory-handling function calls or (if the -t option is speci‐
+       fied) time.
 
 OPTIONS
        -o file, --output=file
@@ -21,7 +24,8 @@ OPTIONS
               Use string as the title inside the output graph.
 
        -t, --time
-              Use time (rather than number of function calls) as the scale for the X axis.
+              Use time (rather than number of function calls)  as  the  scale
+              for the X axis.
 
        -T, --total
               Also draw a graph of total memory consumption.
@@ -51,7 +55,9 @@ SEE ALSO
        memusage(1), mtrace(1)
 
 COLOPHON
-       This  page is part of release 4.15 of the Linux man-pages project.  A description of the project, information about reporting
-       bugs, and the latest version of this page, can be found at https://www.kernel.org/doc/man-pages/.
+       This  page  is part of release 4.15 of the Linux man-pages project.  A
+       description of the project, information about reporting bugs, and  the
+       latest     version     of    this    page,    can    be    found    at
+       https://www.kernel.org/doc/man-pages/.
 
-GNU                                                          2017-09-15                                              MEMUSAGESTAT(1)
+GNU                               2017-09-15                  MEMUSAGESTAT(1)

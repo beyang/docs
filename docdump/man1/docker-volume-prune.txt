@@ -1,0 +1,25 @@
+DOCKER(1)                                                           DOCKER(1)
+
+NAME
+       docker-volume-prune - Remove all unused local volumes
+
+SYNOPSIS
+       docker volume prune [OPTIONS]
+
+DESCRIPTION
+       Remove all unused local volumes
+
+OPTIONS
+       --filter=
+           Provide filter values (e.g. 'label=<label>')
+
+       -f, --force[=false]
+           Do not prompt for confirmation
+
+       -h, --help[=false]
+           help for prune
+
+SEE ALSO
+       docker-volume(1)
+
+Docker Community                   Mar 2020                         DOCKER(1)

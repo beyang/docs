@@ -1,4 +1,4 @@
-AUTOMAKE(1)                                                 User Commands                                                AUTOMAKE(1)
+AUTOMAKE(1)                     User Commands                     AUTOMAKE(1)
 
 NAME
        automake - manual page for automake 1.15.1
@@ -130,16 +130,18 @@ REPORTING BUGS
        General help using GNU software: <http://www.gnu.org/gethelp/>.
 
 COPYRIGHT
-       Copyright    ©    2017    Free    Software    Foundation,    Inc.    License   GPLv2+:   GNU   GPL   version   2   or   later
-       <http://gnu.org/licenses/gpl-2.0.html>
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2017 Free Software Foundation, Inc.  License GPLv2+: GNU
+       GPL version 2 or later <http://gnu.org/licenses/gpl-2.0.html>
+       This is free software: you are free to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 SEE ALSO
-       The full documentation for automake is maintained as a Texinfo manual.  If  the  info  and  automake  programs  are  properly
-       installed at your site, the command
+       The full documentation for automake is maintained as a Texinfo manual.
+       If the info and automake programs are properly installed at your site,
+       the command
 
               info automake
 
        should give you access to the complete manual.
 
-automake 1.15.1                                              March 2018                                                  AUTOMAKE(1)
+automake 1.15.1                   March 2018                      AUTOMAKE(1)

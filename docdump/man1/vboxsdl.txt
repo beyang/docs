@@ -1,10 +1,11 @@
-VBOXSDL(1)                                                  User Commands                                                 VBOXSDL(1)
+VBOXSDL(1)                      User Commands                      VBOXSDL(1)
 
 NAME
        VBoxSDL - x86 virtualization solution
 
 DESCRIPTION
-       Oracle VM VirtualBox SDL GUI version3 (C) 2005-2016 Oracle Corporation All rights reserved.
+       Oracle VM VirtualBox SDL GUI version3 (C) 2005-2016 Oracle Corporation
+       All rights reserved.
 
    Usage:
        --startvm <uuid|name>
@@ -23,7 +24,8 @@ DESCRIPTION
               Set temporary CDROM/DVD to file/device ('none' to unmount)
 
        --boot <a|c|d|n>
-              Set temporary boot device (a = floppy, c = 1st HD, d = DVD, n = network)
+              Set temporary boot device (a = floppy, c = 1st HD, d = DVD, n =
+              network)
 
        --memory <size>
               Set temporary memory size in megabytes
@@ -37,7 +39,8 @@ DESCRIPTION
        --fullscreenresize
               Resize the guest on fullscreen
 
-       --fixedmode <w> <h> <bpp> Use a fixed SDL video mode with given width, height and bits per pixel
+       --fixedmode <w> <h> <bpp> Use a fixed SDL video mode with given width,
+              height and bits per pixel
 
        --nofstoggle
               Forbid switching to/from fullscreen mode
@@ -57,16 +60,19 @@ DESCRIPTION
        --detecthostkey
               Get the hostkey identifier and modifier state
 
-       --hostkey <key> {<key2>} <mod> Set the host key to the values obtained using --detecthostkey
+       --hostkey <key> {<key2>} <mod> Set the host key to the values obtained
+              using --detecthostkey
 
        --termacpi
               Send an ACPI power button event when closing the window
 
        --vrdp <ports>
-              Listen for VRDP connections on one of specified ports (default if not specified)
+              Listen  for VRDP connections on one of specified ports (default
+              if not specified)
 
        --discardstate
-              Discard saved state (if present) and revert to last snapshot (if present)
+              Discard saved state (if present) and revert  to  last  snapshot
+              (if present)
 
        --settingspw <pw>
               Specify the settings password
@@ -91,13 +97,15 @@ DESCRIPTION
 
    Key bindings:
        <hostkey> +
-              f            Switch  to  full screen / restore to previous view h           Press ACPI power button n           Take a
-              snapshot and continue execution p           Pause / resume execution q           Power  off  r            VM  reset  s
-              Save state and power off
+              f            Switch to full screen / restore to previous view h
+              Press ACPI power button n           Take a  snapshot  and  con‐
+              tinue   execution   p            Pause  /  resume  execution  q
+              Power off r           VM reset s           Save state and power
+              off
 
        <del>  Send <ctrl><alt><del>
 
        <F1>...<F12>
               Send <ctrl><alt><Fx>
 
-VBoxSDL                                                       June 2016                                                   VBOXSDL(1)
+VBoxSDL                           June 2016                        VBOXSDL(1)

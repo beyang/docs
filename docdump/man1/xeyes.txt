@@ -1,4 +1,4 @@
-XEYES(1)                                               General Commands Manual                                              XEYES(1)
+XEYES(1)                   General Commands Manual                   XEYES(1)
 
 NAME
        xeyes - a follow the mouse X demo
@@ -37,16 +37,19 @@ OPTIONS
        -bw border width
                choose a different width for the window border.
 
-       -shape  uses the SHAPE extension to shape the window.  This is the default.
+       -shape  uses  the  SHAPE  extension  to shape the window.  This is the
+               default.
 
        +shape  disables use of the SHAPE extension to shape the window.
 
-       -render uses Xrender to draw anti-aliased eyes.  This is the default if xeyes has been compiled with Xrender support.
+       -render uses Xrender to draw anti-aliased eyes.  This is  the  default
+               if xeyes has been compiled with Xrender support.
 
        +render disables Xrender and draws traditional eyes.
 
        -distance
-               uses an alternative mapping, as if the eyes were set back from the screen, thus following the mouse more precisely.
+               uses an alternative mapping, as if the eyes were set back from
+               the screen, thus following the mouse more precisely.
 
 SEE ALSO
        X(7), X Toolkit documentation
@@ -54,6 +57,7 @@ SEE ALSO
 
 AUTHOR
        Keith Packard, MIT X Consortium
-       Copied from the NeWS version written (apparently) by Jeremy Huxtable as seen at SIGGRAPH '88
+       Copied from the NeWS version written (apparently) by  Jeremy  Huxtable
+       as seen at SIGGRAPH '88
 
-X Version 11                                                 xeyes 1.1.1                                                    XEYES(1)
+X Version 11                     xeyes 1.1.1                         XEYES(1)

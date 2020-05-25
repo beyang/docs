@@ -1,4 +1,4 @@
-RPMDB(8)                                               System Manager's Manual                                              RPMDB(8)
+RPMDB(8)                   System Manager's Manual                   RPMDB(8)
 
 NAME
        rpmdb - RPM Database Tool
@@ -9,10 +9,12 @@ SYNOPSIS
 DESCRIPTION
        The general form of an rpm rebuild database command is
 
-       rpm {--initdb|--rebuilddb} [-v] [--dbpath DIRECTORY] [--root DIRECTORY]
+       rpm  {--initdb|--rebuilddb}  [-v]  [--dbpath DIRECTORY] [--root DIREC‐
+       TORY]
 
-       Use --initdb to create a new database if one doesn't already exist (existing database is not overwritten), use --rebuilddb to
-       rebuild the database indices from the installed package headers.
+       Use --initdb to create a new database if  one  doesn't  already  exist
+       (existing database is not overwritten), use --rebuilddb to rebuild the
+       database indices from the installed package headers.
 
 SEE ALSO
        popt(3),
@@ -23,8 +25,9 @@ SEE ALSO
        rpmbuild(8),
        rpmspec(8),
 
-       rpm --help - as rpm supports customizing the options via popt aliases it's impossible to guarantee that what's  described  in
-       the manual matches what's available.
+       rpm --help - as rpm supports customizing the options via popt  aliases
+       it's  impossible  to  guarantee  that  what's  described in the manual
+       matches what's available.
 
        http://www.rpm.org/ <URL:http://www.rpm.org/>
 
@@ -34,4 +37,4 @@ AUTHORS
        Erik Troan <ewt@redhat.com>
        Panu Matilainen <pmatilai@redhat.com>
 
-Red Hat, Inc                                                29 June 2010                                                    RPMDB(8)
+Red Hat, Inc                     29 June 2010                        RPMDB(8)

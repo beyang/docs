@@ -1,4 +1,4 @@
-STEST(1)                                               General Commands Manual                                              STEST(1)
+STEST(1)                   General Commands Manual                   STEST(1)
 
 NAME
        stest - filter a list of files by properties
@@ -7,8 +7,9 @@ SYNOPSIS
        stest [-abcdefghlpqrsuwx] [-n file] [-o file] [file...]
 
 DESCRIPTION
-       stest  takes  a  list  of  files  and filters by the files' properties, analogous to test(1).  Files which pass all tests are
-       printed to stdout. If no files are given, stest reads files from stdin.
+       stest  takes  a  list  of  files and filters by the files' properties,
+       analogous to test(1).  Files which pass all tests are printed to  std‐
+       out. If no files are given, stest reads files from stdin.
 
 OPTIONS
        -a     Test hidden files.
@@ -61,4 +62,4 @@ EXIT STATUS
 SEE ALSO
        dmenu(1), test(1)
 
-                                                              dmenu-4.7                                                     STEST(1)
+                                  dmenu-4.7                          STEST(1)

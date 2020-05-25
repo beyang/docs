@@ -1,4 +1,4 @@
-MANCONV(1)                                               Manual pager utils                                               MANCONV(1)
+MANCONV(1)                    Manual pager utils                   MANCONV(1)
 
 NAME
        manconv - convert manual page from one encoding to another
@@ -7,12 +7,15 @@ SYNOPSIS
        manconv -f from-code[:from-code...]  -t to-code [-dqhV] [filename]
 
 DESCRIPTION
-       manconv  converts  a  manual page from one encoding to another, like iconv.  Unlike iconv, it can try multiple possible input
-       encodings in sequence.  This is useful for manual pages installed in directories without an  explicit  encoding  declaration,
-       since they may be in UTF-8 or in a legacy character set.
+       manconv  converts  a  manual  page  from one encoding to another, like
+       iconv.  Unlike iconv, it can try multiple possible input encodings  in
+       sequence.   This  is  useful for manual pages installed in directories
+       without an explicit encoding declaration, since they may be  in  UTF-8
+       or in a legacy character set.
 
-       If  an  encoding  declaration  is  found on the first line of the manual page, that declaration overrides any input encodings
-       specified on manconv's command line.  Encoding declarations have the following form:
+       If  an  encoding  declaration is found on the first line of the manual
+       page, that declaration overrides any input encodings specified on man‐
+       conv's command line.  Encoding declarations have the following form:
 
               '\" -*- coding: UTF-8 -*-
 
@@ -22,7 +25,8 @@ DESCRIPTION
 
 OPTIONS
        -f encodings, --from-code encodings
-              Try each of encodings (a colon-separated list) in sequence as the input encoding.
+              Try  each  of encodings (a colon-separated list) in sequence as
+              the input encoding.
 
        -t encoding, --to-code encoding
               Convert the manual page to encoding.
@@ -45,4 +49,4 @@ SEE ALSO
 AUTHOR
        Colin Watson (cjwatson@debian.org).
 
-2.8.3                                                        2018-04-05                                                   MANCONV(1)
+2.8.3                             2018-04-05                       MANCONV(1)

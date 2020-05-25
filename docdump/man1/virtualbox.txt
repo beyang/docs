@@ -1,10 +1,11 @@
-VIRTUALBOX(1)                                               User Commands                                              VIRTUALBOX(1)
+VIRTUALBOX(1)                   User Commands                   VIRTUALBOX(1)
 
 NAME
        VirtualBox - x86 virtualization solution
 
 DESCRIPTION
-       Oracle VM VirtualBox Manager3 (C) 2005-2016 Oracle Corporation All rights reserved.
+       Oracle  VM  VirtualBox  Manager3  (C) 2005-2016 Oracle Corporation All
+       rights reserved.
 
    Usage:
        --startvm <vmname|UUID>
@@ -74,7 +75,8 @@ DESCRIPTION
               recompiled execution of user code (*)
 
        --recompile-all
-              recompiled execution of all code, with disabled code patching and scanning
+              recompiled execution of all code, with disabled  code  patching
+              and scanning
 
        --execute-all-in-iem
               For debugging the interpreted execution mode.
@@ -94,4 +96,4 @@ DESCRIPTION
        VBOX_GUI_NO_DEBUGGER
               disable the GUI debug menu and debug windows
 
-VirtualBox                                                    June 2016                                                VIRTUALBOX(1)
+VirtualBox                        June 2016                     VIRTUALBOX(1)

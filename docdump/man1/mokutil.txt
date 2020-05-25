@@ -1,4 +1,4 @@
-MOKUTIL(1)                                             General Commands Manual                                            MOKUTIL(1)
+MOKUTIL(1)                 General Commands Manual                 MOKUTIL(1)
 
 NAME
        mokutil - utility to manipulate machine owner keys
@@ -50,7 +50,8 @@ SYNOPSIS
        mokutil [--dbx]
 
 DESCRIPTION
-       mokutil is a tool to import or delete the machines owner keys (MOK) stored in the database of shim.
+       mokutil  is  a  tool to import or delete the machines owner keys (MOK)
+       stored in the database of shim.
 
 OPTIONS
        -l, --list-enrolled
@@ -63,10 +64,12 @@ OPTIONS
               List the keys to be deleted
 
        -i, --import
-              Collect the followed files and form a enrolling request to shim. The files must be in DER format.
+              Collect the followed files and  form  a  enrolling  request  to
+              shim. The files must be in DER format.
 
        -d, --delete
-              Collect the followed files and form a deleting request to shim. The files must be in DER format.
+              Collect the followed files and form a deleting request to shim.
+              The files must be in DER format.
 
        --revoke-import
               Revoke the current import request (MokNew)
@@ -121,10 +124,12 @@ OPTIONS
               Manipulate the MOK blacklist (MOKX) instead of the MOK list
 
        -i, --import-hash
-              Create an enrolling request for the hash of a key in DER format. Note that this is not the password hash.
+              Create an enrolling request for the hash of a key in  DER  for‐
+              mat. Note that this is not the password hash.
 
        -d, --delete-hash
-              Create an deleting request for the hash of a key in DER format. Note that this is not the password hash.
+              Create an deleting request for the hash of a key in DER format.
+              Note that this is not the password hash.
 
        --set-verbosity
               Set the SHIM_VERBOSE to make shim more or less verbose
@@ -135,5 +140,6 @@ OPTIONS
 
        --db   List the keys in the secure boot signature store (db)
 
-       --dbx  List the keys in the secure boot blacklist signature store (dbx)
+       --dbx  List the keys in the  secure  boot  blacklist  signature  store
+              (dbx)
 

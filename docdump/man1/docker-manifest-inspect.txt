@@ -1,0 +1,25 @@
+DOCKER(1)                                                           DOCKER(1)
+
+NAME
+       docker-manifest-inspect - Display an image manifest, or manifest list
+
+SYNOPSIS
+       docker manifest inspect [OPTIONS] [MANIFEST_LIST] MANIFEST
+
+DESCRIPTION
+       Display an image manifest, or manifest list
+
+OPTIONS
+       -h, --help[=false]
+           help for inspect
+
+       --insecure[=false]
+           Allow communication with an insecure registry
+
+       -v, --verbose[=false]
+           Output additional info including layers and platform
+
+SEE ALSO
+       docker-manifest(1)
+
+Docker Community                   Mar 2020                         DOCKER(1)

@@ -1,4 +1,4 @@
-TIFICC(1)                                              General Commands Manual                                             TIFICC(1)
+TIFICC(1)                  General Commands Manual                  TIFICC(1)
 
 NAME
        tificc - little cms ICC profile applier for TIFF.
@@ -7,29 +7,34 @@ SYNOPSIS
        tificc [options] input.tif output.tif
 
 DESCRIPTION
-       lcms is a standalone CMM engine, which deals with the color management.  It implements a fast transformation between ICC pro‐
-       files.  tificc is a little cms ICC profile applier for TIFF.
+       lcms  is  a  standalone CMM engine, which deals with the color manage‐
+       ment.  It implements  a  fast  transformation  between  ICC  profiles.
+       tificc is a little cms ICC profile applier for TIFF.
 
 OPTIONS
        -a     Handle channels > 4 as alpha.
 
        -b     Black point compensation.
 
-       -c NUM Precalculates transform (0=Off, 1=Normal, 2=Hi-res, 3=LoRes) [defaults to 1].
+       -c NUM Precalculates  transform  (0=Off,  1=Normal, 2=Hi-res, 3=LoRes)
+              [defaults to 1].
 
-       -d NUM Observer adaptation state (abs.col. only), (0..1.0, float value) [defaults to 0.0].
+       -d NUM Observer  adaptation  state  (abs.col.  only),  (0..1.0,  float
+              value) [defaults to 0.0].
 
        -e     Embed destination profile.
 
        -g     Marks out-of-gamut colors on softproof.
 
-       -h NUM Show summary of options and examples (0=help, 1=Examples, 2=Built-in profiles, 3=Contact information)
+       -h NUM Show  summary  of  options  and  examples  (0=help, 1=Examples,
+              2=Built-in profiles, 3=Contact information)
 
        -i profile
               Input profile (defaults to sRGB).
 
        -k inklimit
-              Ink-limiting in % (CMYK only), (0..400.0, float value) [default 400.0].
+              Ink-limiting in % (CMYK only), (0..400.0, float value) [default
+              400.0].
 
        -l profile
               Transform by device-link profile.
@@ -88,13 +93,15 @@ EXAMPLES
             tificc -i*Lab in.tif out.tif
 
 NOTES
-       For suggestions, comments, bug reports etc. send mail to info@littlecms.com.
+       For  suggestions,  comments,  bug  reports etc. send mail to info@lit‐
+       tlecms.com.
 
 SEE ALSO
        jpgicc(1), linkicc(1), psicc(1), transicc(1)
 
 AUTHOR
-       This manual page was originally written by Shiju p. Nair <shiju.p@gmail.com>, for the Debian project. Modified by Marti Maria
+       This  manual  page  was  originally   written   by   Shiju   p.   Nair
+       <shiju.p@gmail.com>,  for  the Debian project. Modified by Marti Maria
        to reflect further changes.
 
-                                                          October 23, 2004                                                 TIFICC(1)
+                               October 23, 2004                     TIFICC(1)

@@ -1,4 +1,4 @@
-zipcloak(1)                                            General Commands Manual                                           zipcloak(1)
+zipcloak(1)                General Commands Manual                zipcloak(1)
 
 NAME
        zipcloak - encrypt entries in a zipfile
@@ -28,7 +28,8 @@ OPTIONS
 
        -O path
        --output-file zipfile
-              Write output to new archive zipfile, leaving original archive as is.
+              Write  output  to new archive zipfile, leaving original archive
+              as is.
 
        -q
        --quiet
@@ -39,16 +40,21 @@ OPTIONS
               Show version information.
 
 DESCRIPTION
-       zipcloak encrypts all unencrypted entries in the zipfile.  This is the default action.
+       zipcloak encrypts all unencrypted entries in the zipfile.  This is the
+       default action.
 
        The -d option is used to decrypt encrypted entries in the zipfile.
 
        zipcloak uses original zip encryption which is considered weak.
 
-       Note:  The  encryption code of this program is not copyrighted and is put in the public domain.  It was originally written in
-              Europe and can be freely distributed from any country including the U.S.A.  (Previously if this program  was  imported
-              into  the  U.S.A,  it could not be re-exported from the U.S.A to another country.)  See the file README.CR included in
-              the source distribution for more on this.  Otherwise, the Info-ZIP license applies.
+       Note:  The  encryption  code of this program is not copyrighted and is
+              put in the public domain.  It was originally written in  Europe
+              and  can  be  freely distributed from any country including the
+              U.S.A.  (Previously if  this  program  was  imported  into  the
+              U.S.A,  it  could  not be re-exported from the U.S.A to another
+              country.)  See the file README.CR included in the  source  dis‐
+              tribution  for  more  on this.  Otherwise, the Info-ZIP license
+              applies.
 
 EXAMPLES
        To be added.
@@ -56,8 +62,10 @@ EXAMPLES
 BUGS
        Large files (> 2 GB) and large archives not yet supported.
 
-       Split archives not yet supported.  A work around is to convert the split archive to a single-file archive using zip and  then
-       use zipcloak on the single-file archive.  If needed, the resulting archive can then be split again using zip.
+       Split archives not yet supported.  A work around  is  to  convert  the
+       split archive to a single-file archive using zip and then use zipcloak
+       on the single-file archive.  If needed, the resulting archive can then
+       be split again using zip.
 
 SEE ALSO
        zip(1), unzip(1)
@@ -65,4 +73,4 @@ SEE ALSO
 AUTHOR
        Info-ZIP
 
-                                                         v3.0 of 8 May 2008                                              zipcloak(1)
+                              v3.0 of 8 May 2008                  zipcloak(1)

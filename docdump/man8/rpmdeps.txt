@@ -1,4 +1,4 @@
-RPMDEPS(8)                                             System Manager's Manual                                            RPMDEPS(8)
+RPMDEPS(8)                 System Manager's Manual                 RPMDEPS(8)
 
 NAME
        rpmdeps - Generate RPM Package Dependencies
@@ -7,8 +7,9 @@ SYNOPSIS
        rpmdeps {-P|--provides} {-R|--requires} {--rpmfcdebug} FILE ...
 
 DESCRIPTION
-       rpmdeps generates package dependencies for the set of FILE arguments.  Each FILE argument is searched for Elf32/Elf64, script
-       interpreter, or per-script dependencies, and the dependencies are printed to stdout.
+       rpmdeps  generates package dependencies for the set of FILE arguments.
+       Each FILE argument is searched for Elf32/Elf64, script interpreter, or
+       per-script dependencies, and the dependencies are printed to stdout.
 
 SEE ALSO
        rpm(8),
@@ -18,4 +19,4 @@ SEE ALSO
 AUTHORS
        Jeff Johnson <jbj@redhat.com>
 
-Red Hat, Inc.                                              24 October 2002                                                RPMDEPS(8)
+Red Hat, Inc.                  24 October 2002                     RPMDEPS(8)

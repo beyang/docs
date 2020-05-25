@@ -1,4 +1,4 @@
-UNIQ(1)                                                     User Commands                                                    UNIQ(1)
+UNIQ(1)                         User Commands                         UNIQ(1)
 
 NAME
        uniq - report or omit repeated lines
@@ -7,11 +7,13 @@ SYNOPSIS
        uniq [OPTION]... [INPUT [OUTPUT]]
 
 DESCRIPTION
-       Filter adjacent matching lines from INPUT (or standard input), writing to OUTPUT (or standard output).
+       Filter adjacent matching lines from INPUT (or standard input), writing
+       to OUTPUT (or standard output).
 
        With no options, matching lines are merged to the first occurrence.
 
-       Mandatory arguments to long options are mandatory for short options too.
+       Mandatory arguments to long options are mandatory  for  short  options
+       too.
 
        -c, --count
               prefix lines by the number of occurrences
@@ -22,13 +24,15 @@ DESCRIPTION
        -D     print all duplicate lines
 
        --all-repeated[=METHOD]
-              like -D, but allow separating groups with an empty line; METHOD={none(default),prepend,separate}
+              like  -D,  but  allow  separating  groups  with  an empty line;
+              METHOD={none(default),prepend,separate}
 
        -f, --skip-fields=N
               avoid comparing the first N fields
 
        --group[=METHOD]
-              show all items, separating groups with an empty line; METHOD={separate(default),prepend,append,both}
+              show  all  items,  separating  groups  with  an   empty   line;
+              METHOD={separate(default),prepend,append,both}
 
        -i, --ignore-case
               ignore differences in case when comparing
@@ -50,10 +54,12 @@ DESCRIPTION
        --version
               output version information and exit
 
-       A field is a run of blanks (usually spaces and/or TABs), then non-blank characters.  Fields are skipped before chars.
+       A  field  is  a  run  of  blanks  (usually  spaces  and/or TABs), then
+       non-blank characters.  Fields are skipped before chars.
 
-       Note: 'uniq' does not detect repeated lines unless they are adjacent.  You may want to sort the input first, or use 'sort -u'
-       without 'uniq'.  Also, comparisons honor the rules specified by 'LC_COLLATE'.
+       Note: 'uniq' does not detect repeated lines unless they are  adjacent.
+       You may want to sort the input first, or use 'sort -u' without 'uniq'.
+       Also, comparisons honor the rules specified by 'LC_COLLATE'.
 
 AUTHOR
        Written by Richard M. Stallman and David MacKenzie.
@@ -63,9 +69,10 @@ REPORTING BUGS
        Report uniq translation bugs to <http://translationproject.org/team/>
 
 COPYRIGHT
-       Copyright   ©   2017   Free   Software   Foundation,   Inc.    License   GPLv3+:    GNU    GPL    version    3    or    later
-       <http://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2017 Free Software Foundation, Inc.  License  GPLv3+:  GNU
+       GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+       This  is  free  software:  you are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 SEE ALSO
        comm(1), join(1), sort(1)
@@ -73,4 +80,4 @@ SEE ALSO
        Full documentation at: <http://www.gnu.org/software/coreutils/uniq>
        or available locally via: info '(coreutils) uniq invocation'
 
-GNU coreutils 8.28                                          January 2018                                                     UNIQ(1)
+GNU coreutils 8.28               January 2018                         UNIQ(1)

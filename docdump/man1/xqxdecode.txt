@@ -1,4 +1,4 @@
-xqxdecode(1)                                           General Commands Manual                                          xqxdecode(1)
+xqxdecode(1)               General Commands Manual               xqxdecode(1)
 
 NAME
        xqxdecode - Decode a XQX stream into human readable form.
@@ -9,7 +9,8 @@ SYNOPSIS
 DESCRIPTION
        xqxdecode decodes a XQX stream into human readable form.
 
-       An XQX stream is the printer language used by some HP LaserJet printers, such as the HP LaserJet M1005 (MFP).
+       An  XQX stream is the printer language used by some HP LaserJet print‐
+       ers, such as the HP LaserJet M1005 (MFP).
 
 COMMAND LINE OPTIONS
        These are the options that can appear on the command line.

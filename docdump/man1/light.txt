@@ -1,4 +1,4 @@
-LIGHT(1)                                               User's Reference Manual                                              LIGHT(1)
+LIGHT(1)                   User's Reference Manual                   LIGHT(1)
 
 NAME
      light — a program to control backlight controllers
@@ -7,12 +7,14 @@ SYNOPSIS
      light [OPTIONS] [VALUE]
 
 DESCRIPTION
-     light is a program to control backlight display and keyboard controllers under GNU/Linux.
+     light is a program to control backlight display and keyboard controllers
+     under GNU/Linux.
 
      ·   Operates independently of X (X-Window)
-     ·   Can automatically figure out the best controller to use, making full use of the underlying hardware
-     ·   Supports a minimum cap on the brightness value, as some controllers set the display to be pitch black at a vaĺue of 0 (or
-         higher)
+     ·   Can automatically figure out the best controller to use, making full
+         use of the underlying hardware
+     ·   Supports a minimum cap on the brightness value, as some controllers
+         set the display to be pitch black at a vaĺue of 0 (or higher)
 
 COMMANDS
      The following unique commands are supported:
@@ -56,13 +58,15 @@ OPTIONS
              3:  Read values, Errors, Warnings, Notices
 
 FILES
-     When run in its classic SUID root mode light caches settings and current brightness in /etc/light.  In its non-privileged mode
-     of operation the ~/.cache/light directory is used instead.
+     When run in its classic SUID root mode light caches settings and current
+     brightness in /etc/light.  In its non-privileged mode of operation the
+     ~/.cache/light directory is used instead.
 
 AUTHORS
      Copyright © 2012-2018 Fredrik Haikarainen
 
-     This is free software, see the source for copying conditions.  There is NO warranty; not even for MERCHANTABILITY or FITNESS
-     FOR A PARTICULAR PURPOSE
+     This is free software, see the source for copying conditions.  There is
+     NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR
+     PURPOSE
 
-GNU/Linux                                                  August 4, 2018                                                  GNU/Linux
+GNU/Linux                       August 4, 2018                      GNU/Linux

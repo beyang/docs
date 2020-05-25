@@ -1,4 +1,4 @@
-VFYSERV(1)                                               NSS Security Tools                                               VFYSERV(1)
+VFYSERV(1)                    NSS Security Tools                   VFYSERV(1)
 
 NAME
        vfyserv_ - TBD
@@ -7,31 +7,37 @@ SYNOPSIS
        vfyserv
 
 STATUS
-       This documentation is still work in progress. Please contribute to the initial review in Mozilla NSS bug 836477[1]
+       This documentation is still work in progress. Please contribute to the
+       initial review in Mozilla NSS bug 836477[1]
 
 DESCRIPTION
        The vfyserv tool verifies a certificate chain
 
 OPTIONS
 ADDITIONAL RESOURCES
-       For information about NSS and other tools related to NSS (like JSS), check out the NSS project wiki at
-       http://www.mozilla.org/projects/security/pki/nss/. The NSS site relates directly to NSS code changes and releases.
+       For information about NSS and other tools related to NSS (like JSS),
+       check out the NSS project wiki at
+       http://www.mozilla.org/projects/security/pki/nss/. The NSS site
+       relates directly to NSS code changes and releases.
 
        Mailing lists: https://lists.mozilla.org/listinfo/dev-tech-crypto
 
        IRC: Freenode at #dogtag-pki
 
 AUTHORS
-       The NSS tools were written and maintained by developers with Netscape, Red Hat, Sun, Oracle, Mozilla, and Google.
+       The NSS tools were written and maintained by developers with Netscape,
+       Red Hat, Sun, Oracle, Mozilla, and Google.
 
-       Authors: Elio Maldonado <emaldona@redhat.com>, Deon Lackey <dlackey@redhat.com>.
+       Authors: Elio Maldonado <emaldona@redhat.com>, Deon Lackey
+       <dlackey@redhat.com>.
 
 LICENSE
-       Licensed under the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain
-       one at http://mozilla.org/MPL/2.0/.
+       Licensed under the Mozilla Public License, v. 2.0. If a copy of the
+       MPL was not distributed with this file, You can obtain one at
+       http://mozilla.org/MPL/2.0/.
 
 NOTES
         1. Mozilla NSS bug 836477
            https://bugzilla.mozilla.org/show_bug.cgi?id=836477
 
-nss-tools                                                    5 June 2014                                                  VFYSERV(1)
+nss-tools                        5 June 2014                       VFYSERV(1)

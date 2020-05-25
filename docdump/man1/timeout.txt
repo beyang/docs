@@ -1,4 +1,4 @@
-TIMEOUT(1)                                                  User Commands                                                 TIMEOUT(1)
+TIMEOUT(1)                      User Commands                      TIMEOUT(1)
 
 NAME
        timeout - run a command with a time limit
@@ -10,7 +10,8 @@ SYNOPSIS
 DESCRIPTION
        Start COMMAND, and kill it if still running after DURATION.
 
-       Mandatory arguments to long options are mandatory for short options too.
+       Mandatory  arguments  to  long options are mandatory for short options
+       too.
 
        --preserve-status
 
@@ -22,7 +23,8 @@ DESCRIPTION
 
               when not running timeout directly from a shell prompt,
 
-              allow COMMAND to read from the TTY and get TTY signals; in this mode, children of COMMAND will not be timed out
+              allow COMMAND to read from the TTY and get TTY signals; in this
+              mode, children of COMMAND will not be timed out
 
        -k, --kill-after=DURATION
 
@@ -34,7 +36,8 @@ DESCRIPTION
 
               specify the signal to be sent on timeout;
 
-              SIGNAL may be a name like 'HUP' or a number; see 'kill -l' for a list of signals
+              SIGNAL  may be a name like 'HUP' or a number; see 'kill -l' for
+              a list of signals
 
        --help
               display this help and exit
@@ -42,13 +45,15 @@ DESCRIPTION
        --version
               output version information and exit
 
-       DURATION is a floating point number with an optional suffix: 's' for seconds (the default), 'm' for minutes, 'h' for hours or
-       'd' for days.
+       DURATION is a floating point number with an optional suffix:  's'  for
+       seconds (the default), 'm' for minutes, 'h' for hours or 'd' for days.
 
-       If the command times out, and --preserve-status is not set, then exit with status 124.  Otherwise, exit with  the  status  of
-       COMMAND.   If  no  signal  is  specified, send the TERM signal upon timeout.  The TERM signal kills any process that does not
-       block or catch that signal.  It may be necessary to use the KILL (9) signal, since this signal cannot  be  caught,  in  which
-       case the exit status is 128+9 rather than 124.
+       If  the command times out, and --preserve-status is not set, then exit
+       with status 124.  Otherwise, exit with the status of COMMAND.   If  no
+       signal is specified, send the TERM signal upon timeout.  The TERM sig‐
+       nal kills any process that does not block or catch  that  signal.   It
+       may  be necessary to use the KILL (9) signal, since this signal cannot
+       be caught, in which case the exit status is 128+9 rather than 124.
 
 BUGS
        Some platforms don't currently support timeouts beyond the year 2038.
@@ -58,12 +63,14 @@ AUTHOR
 
 REPORTING BUGS
        GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-       Report timeout translation bugs to <http://translationproject.org/team/>
+       Report   timeout   translation   bugs    to    <http://translationpro‐
+       ject.org/team/>
 
 COPYRIGHT
-       Copyright    ©    2017    Free    Software    Foundation,    Inc.    License   GPLv3+:   GNU   GPL   version   3   or   later
-       <http://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2017 Free Software Foundation, Inc.  License GPLv3+: GNU
+       GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 SEE ALSO
        kill(1)
@@ -71,4 +78,4 @@ SEE ALSO
        Full documentation at: <http://www.gnu.org/software/coreutils/timeout>
        or available locally via: info '(coreutils) timeout invocation'
 
-GNU coreutils 8.28                                          January 2018                                                  TIMEOUT(1)
+GNU coreutils 8.28               January 2018                      TIMEOUT(1)
