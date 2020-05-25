@@ -4,7 +4,7 @@
 
 cd $(dirname "${BASH_SOURCE[0]}")
 
-MAN_FILES="$(ls /usr/share/man/man1 | grep '^[a-z]*\.1\.gz$')"
+MAN_FILES="$(ls /usr/share/man/man1 | grep '^[a-z-]*\.1\.gz$')"
 OUT_DIR="docdump/man1"
 for FILE in $MAN_FILES; do
     echo $FILE
