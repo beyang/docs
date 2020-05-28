@@ -1,4 +1,4 @@
-xbmtopbm(1)                                            General Commands Manual                                           xbmtopbm(1)
+xbmtopbm(1)                General Commands Manual                xbmtopbm(1)
 
 NAME
        xbmtopbm - convert an X11 or X10 bitmap into a portable bitmap
@@ -7,7 +7,8 @@ SYNOPSIS
        xbmtopbm [bitmapfile]
 
 DESCRIPTION
-       Reads an X11 or X10 bitmap as input.  Produces a portable bitmap as output.
+       Reads  an  X11  or X10 bitmap as input.  Produces a portable bitmap as
+       output.
 
 SEE ALSO
        pbmtoxbm(1), pbmtox10bm(1), pbm(5)
@@ -15,4 +16,4 @@ SEE ALSO
 AUTHOR
        Copyright (C) 1988 by Jef Poskanzer.
 
-                                                           31 August 1988                                                xbmtopbm(1)
+                                31 August 1988                    xbmtopbm(1)

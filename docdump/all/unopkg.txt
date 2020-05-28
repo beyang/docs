@@ -1,4 +1,4 @@
-unopkg(1)                                                   User Command                                                   unopkg(1)
+unopkg(1)                        User Command                       unopkg(1)
 
 Name
        unopkg - LibreOffice Extension Manager
@@ -12,10 +12,11 @@ SYNOPSIS
        unopkg [--help|-h]
 
 DESCRIPTION
-       LibreOffice  is  a  fully  featured  office  suite for the daily use with all features you would normally expect in an office
-       suite.
+       LibreOffice  is  a  fully featured office suite for the daily use with
+       all features you would normally expect in an office suite.
 
-       There exists many LibreOffice extensions all over the word. For example, see http://extensions.libreoffice.org/
+       There exists many LibreOffice extensions all over the word. For  exam‐
+       ple, see http://extensions.libreoffice.org/
 
        This tool allows managing the extensions from the command line.
 
@@ -48,14 +49,16 @@ OPTIONS
               custom log file; the default one is <cache-dir>/log.txt
 
        --shared|-f
-              operate on the system installation deployment context; use only when no concurrent  Office  process(es)  are  running!
-              (only for experts)
+              operate on the system installation deployment context; use only
+              when no concurrent Office process(es) are  running!  (only  for
+              experts)
 
        --deployment-context <context>
               operate on explicit deployment context (only for experts)
 
 TROUBLESHOOTING PROBLEMS
-       See http://wiki.documentfoundation.org/BugReport for more details about how to report bugs in LibreOffice.
+       See   http://wiki.documentfoundation.org/BugReport  for  more  details
+       about how to report bugs in LibreOffice.
 
 SEE ALSO
        http://www.documentfoundation.org/
@@ -63,4 +66,4 @@ SEE ALSO
 AUTHOR
        This manual page was created by Petr Mladek <pmladek@suse.cz>.
 
-LibreOffice Extension Manager                                2008-03-18                                                    unopkg(1)
+LibreOffice Extension Manager     2008-03-18                        unopkg(1)

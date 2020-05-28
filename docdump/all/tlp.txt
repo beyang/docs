@@ -1,4 +1,4 @@
-tlp(8)                                                    Power Management                                                    tlp(8)
+tlp(8)                         Power Management                        tlp(8)
 
 NAME
        tlp - apply laptop power saving settings
@@ -7,11 +7,12 @@ SYNOPSIS
        tlp command [parameters] [-- <config> ... ]
 
 DESCRIPTION
-       Apply power saving settings manually and control ThinkPad battery features.
+       Apply power saving settings manually and control ThinkPad battery fea‐
+       tures.
 
 COMMANDS
-       start  Initialize  tlp and apply power saving settings according to the actual power source. Also use to apply a changed con‐
-              figuration.
+       start  Initialize tlp and apply power saving settings according to the
+              actual power source. Also use to apply a changed configuration.
 
        bat    Apply power saving settings for battery power source.
 
@@ -21,37 +22,48 @@ COMMANDS
 
        false  Same as ac.
 
-       usb    Enable autosuspend for all USB devices, except blacklisted ones.
+       usb    Enable  autosuspend  for  all  USB  devices, except blacklisted
+              ones.
 
-       bayoff Turn off optical drive in UltraBay/MediaBay.  The drive may be re-enabled by pulling the eject lever  or  pushing  the
-              media eject button on newer models.
+       bayoff Turn off optical drive in UltraBay/MediaBay.  The drive may  be
+              re-enabled  by  pulling  the  eject  lever or pushing the media
+              eject button on newer models.
 
        setcharge [START_CHARGE STOP_CHARGE] [BAT0|BAT1] (ThinkPads only)
-              Set  charge  thresholds  of  main  (BAT0)  or auxiliary (BAT1) battery temporarily.  Values must be between 1 and 100,
-              START_CHARGE must not exceed STOP_CHARGE - 4.  Configured thresholds are  restored  upon  next  system  boot-up.  When
-              called without arguments, configured thresholds are set.
+              Set charge thresholds of main (BAT0) or auxiliary  (BAT1)  bat‐
+              tery   temporarily.    Values   must  be  between  1  and  100,
+              START_CHARGE must  not  exceed  STOP_CHARGE  -  4.   Configured
+              thresholds  are  restored upon next system boot-up. When called
+              without arguments, configured thresholds are set.
 
        fullcharge [BAT0|BAT1] (ThinkPads only)
-              Set  charge  thresholds  of main (BAT0) or auxiliary (BAT1) battery to factory presets (96/100) temporarily (causing a
-              full charge).  Configured thresholds are restored upon next system boot-up.
+              Set charge thresholds of main (BAT0) or auxiliary  (BAT1)  bat‐
+              tery  to  factory  presets (96/100) temporarily (causing a full
+              charge).  Configured thresholds are restored upon  next  system
+              boot-up.
 
        chargeonce [BAT0|BAT1] (ThinkPads only)
-              Charge main (BAT0) or auxiliary (BAT1) battery to the stop charge threshold once (bypassing start threshold).  Config‐
-              ured thresholds are restored upon next system boot-up.
+              Charge  main  (BAT0)  or  auxiliary  (BAT1) battery to the stop
+              charge threshold once (bypassing start threshold).   Configured
+              thresholds are restored upon next system boot-up.
 
        discharge [BAT0|BAT1] (ThinkPads only)
-              Force complete discharge of main (BAT0) or auxiliary (BAT1) battery.
+              Force  complete  discharge  of  main (BAT0) or auxiliary (BAT1)
+              battery.
 
        recalibrate [BAT0|BAT1] (ThinkPads only)
-              Battery recalibration: completely discharge main (BAT0) or auxiliary (BAT1) battery and recharge to 100%.
+              Battery recalibration: completely discharge main (BAT0) or aux‐
+              iliary (BAT1) battery and recharge to 100%.
 
        diskid Show disk ids for configuration.
 
        -- PARAM=value ...
-              Add parameters to temporarily overwrite the system configuration (for this program invocation only).
+              Add  parameters  to temporarily overwrite the system configura‐
+              tion (for this program invocation only).
 
 NOTES
-       For ThinkPads with more than one battery the selection works as follows:
+       For ThinkPads with more than one battery the selection works  as  fol‐
+       lows:
 
               BAT0 - Main or internal battery
 
@@ -72,22 +84,25 @@ EXAMPLES
 
 FILES
        /etc/tlp.conf
-              System-wide  user  configuration  file, uncomment parameters here to override default settings and customization files
-              below.
+              System-wide  user configuration file, uncomment parameters here
+              to override default settings and customization files below.
 
        /etc/tlp.d/*.conf
-              System-wide drop-in customization files, overriding defaults below.
+              System-wide drop-in customization  files,  overriding  defaults
+              below.
 
        /usr/share/tlp/defaults.conf
-              Intrinsic default settings. DO NOT EDIT this file, instead use one of the above alternatives.
+              Intrinsic  default settings. DO NOT EDIT this file, instead use
+              one of the above alternatives.
 
        /run/tlp/run.conf
-              Effective settings consolidated from all above files. DO NOT CHANGE this file, it is for reference only  and  regener‐
-              ated on every invocation of TLP.
+              Effective settings consolidated from all above  files.  DO  NOT
+              CHANGE  this  file, it is for reference only and regenerated on
+              every invocation of TLP.
 
        /etc/default/tlp
-              Obsolete  system-wide  configuration  file. DO NOT USE this file, it is evaluated only when /etc/tlp.conf is non-exis‐
-              tent.
+              Obsolete system-wide configuration file. DO NOT USE this  file,
+              it is evaluated only when /etc/tlp.conf is non-existent.
 
 EXIT STATUS
        On success, 0 is returned, a non-zero failure code otherwise.
@@ -100,4 +115,4 @@ SEE ALSO
 AUTHOR
        (c) 2020 Thomas Koch <linrunner at gmx.net>
 
-TLP 1.3.0                                                    2020-01-31                                                       tlp(8)
+TLP 1.3.0                         2020-01-31                           tlp(8)

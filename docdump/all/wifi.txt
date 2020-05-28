@@ -1,4 +1,4 @@
-wifi(1)                                                   Power Management                                                   wifi(1)
+wifi(1)                        Power Management                       wifi(1)
 
 NAME
        wifi - enable/disable internal wifi device
@@ -21,4 +21,4 @@ SEE ALSO
 AUTHOR
        (c) 2020 Thomas Koch <linrunner at gmx.net>
 
-TLP 1.3.0                                                    2020-01-31                                                      wifi(1)
+TLP 1.3.0                         2020-01-31                          wifi(1)

@@ -1,13 +1,15 @@
-sputoppm(1)                                            General Commands Manual                                           sputoppm(1)
+sputoppm(1)                General Commands Manual                sputoppm(1)
 
 NAME
-       sputoppm - convert an Atari uncompressed Spectrum file into a portable pixmap
+       sputoppm - convert an Atari uncompressed Spectrum file into a portable
+       pixmap
 
 SYNOPSIS
        sputoppm [spufile]
 
 DESCRIPTION
-       Reads an Atari uncompressed Spectrum file as input.  Produces a portable pixmap as output.
+       Reads an Atari uncompressed Spectrum file as input.  Produces a porta‐
+       ble pixmap as output.
 
 SEE ALSO
        spctoppm(1), ppm(5)
@@ -15,4 +17,4 @@ SEE ALSO
 AUTHOR
        Copyright (C) 1991 by Steve Belczyk (seb3@gte.com) and Jef Poskanzer.
 
-                                                            19 July 1990                                                 sputoppm(1)
+                                 19 July 1990                     sputoppm(1)

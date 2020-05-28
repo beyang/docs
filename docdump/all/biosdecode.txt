@@ -1,4 +1,4 @@
-BIOSDECODE(8)                                          System Manager's Manual                                         BIOSDECODE(8)
+BIOSDECODE(8)              System Manager's Manual              BIOSDECODE(8)
 
 NAME
        biosdecode - BIOS information decoder
@@ -7,8 +7,9 @@ SYNOPSIS
        biosdecode [OPTIONS]
 
 DESCRIPTION
-       biosdecode  parses the BIOS memory and prints information about all structures (or entry points) it knows of. Currently known
-       entry point types are:
+       biosdecode  parses  the  BIOS  memory and prints information about all
+       structures (or entry points) it knows of. Currently known entry  point
+       types are:
 
        · SMBIOS (System Management BIOS)
          Use dmidecode for a more detailed output.
@@ -36,8 +37,8 @@ DESCRIPTION
 
        · FJKEYINF (Application Panel, Fujitsu-specific)
 
-       biosdecode started its life as a part of dmidecode but as more entry point types were added, it was moved to a different pro‐
-       gram.
+       biosdecode  started  its life as a part of dmidecode but as more entry
+       point types were added, it was moved to a different program.
 
 OPTIONS
        -d, --dev-mem FILE
@@ -53,8 +54,9 @@ FILES
        /dev/mem
 
 BUGS
-       Most  of  the  time, biosdecode prints too much information (you don't really care about addresses) or not enough (because it
-       doesn't follow pointers and has no lookup tables).
+       Most of the time, biosdecode prints too much  information  (you  don't
+       really  care about addresses) or not enough (because it doesn't follow
+       pointers and has no lookup tables).
 
 AUTHORS
        Alan Cox, Jean Delvare
@@ -62,4 +64,4 @@ AUTHORS
 SEE ALSO
        dmidecode(8), mem(4), ownership(8), vpddecode(8)
 
-dmidecode                                                   February 2007                                              BIOSDECODE(8)
+dmidecode                       February 2007                   BIOSDECODE(8)

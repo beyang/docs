@@ -1,19 +1,23 @@
-SSHTUNNEL(1)                                                User Commands                                               SSHTUNNEL(1)
+SSHTUNNEL(1)                    User Commands                    SSHTUNNEL(1)
 
 NAME
        sshtunnel - SSH tunnels to remote server
 
 DESCRIPTION
-       usage: sshtunnel [-h] [-U SSH_USERNAME] [-p SSH_PORT] [-P SSH_PASSWORD] -R
+       usage:  sshtunnel  [-h]  [-U SSH_USERNAME] [-p SSH_PORT] [-P SSH_PASS‐
+       WORD] -R
 
-              IP:PORT  [IP:PORT  ...] [-L [IP:PORT [IP:PORT ...]]]  [-k SSH_HOST_KEY] [-K KEY_FILE] [-S KEY_PASSWORD] [-t] [-v] [-V]
-              [-x IP:PORT] [-c SSH_CONFIG_FILE] [-z] [-n] [-d [FOLDER [FOLDER ...]]]  ssh_address
+              IP:PORT  [IP:PORT  ...]  [-L  [IP:PORT  [IP:PORT  ...]]]    [-k
+              SSH_HOST_KEY]  [-K  KEY_FILE]  [-S KEY_PASSWORD] [-t] [-v] [-V]
+              [-x IP:PORT] [-c SSH_CONFIG_FILE] [-z] [-n] [-d [FOLDER [FOLDER
+              ...]]]  ssh_address
 
        Pure python ssh tunnel utils Version 0.1.4
 
    positional arguments:
        ssh_address
-              SSH server IP address (GW for SSH tunnels) set with "-- ssh_address" if immediately after -R or -L
+              SSH  server  IP  address  (GW  for  SSH  tunnels)  set with "--
+              ssh_address" if immediately after -R or -L
 
    optional arguments:
        -h, --help
@@ -29,13 +33,19 @@ DESCRIPTION
               SSH server account password
 
        -R IP:PORT [IP:PORT ...], --remote_bind_address IP:PORT [IP:PORT ...]
-              Remote bind address sequence: ip_1:port_1 ip_2:port_2 ... ip_n:port_n Equivalent to ssh -Lxxxx:IP_ADDRESS:PORT If port
-              is omitted, defaults to 22.  Example: -R 10.10.10.10: 10.10.10.10:5900
+              Remote  bind  address  sequence:  ip_1:port_1  ip_2:port_2  ...
+              ip_n:port_n Equivalent to ssh -Lxxxx:IP_ADDRESS:PORT If port is
+              omitted,   defaults   to   22.    Example:   -R    10.10.10.10:
+              10.10.10.10:5900
 
-       -L [IP:PORT [IP:PORT ...]], --local_bind_address [IP:PORT [IP:PORT ...]]
-              Local  bind  address sequence: ip_1:port_1 ip_2:port_2 ... ip_n:port_n Elements may also be valid UNIX socket domains:
-              /tmp/foo.sock /tmp/bar.sock ... /tmp/baz.sock Equivalent to ssh -LPORT:xxxxxxxxx:xxxx,  being  the  local  IP  address
-              optional.  By default it will listen in all interfaces (0.0.0.0) and choose a random port.  Example: -L :40000
+       -L  [IP:PORT  [IP:PORT  ...]],  --local_bind_address [IP:PORT [IP:PORT
+       ...]]
+              Local  bind  address  sequence:  ip_1:port_1  ip_2:port_2   ...
+              ip_n:port_n  Elements  may  also  be valid UNIX socket domains:
+              /tmp/foo.sock /tmp/bar.sock ... /tmp/baz.sock Equivalent to ssh
+              -LPORT:xxxxxxxxx:xxxx, being the local IP address optional.  By
+              default it will listen in all interfaces (0.0.0.0) and choose a
+              random port.  Example: -L :40000
 
        -k SSH_HOST_KEY, --ssh_host_key SSH_HOST_KEY
               Gateway's host key
@@ -67,7 +77,9 @@ DESCRIPTION
        -n, --noagent
               Disable looking for keys from an SSH agent
 
-       -d [FOLDER [FOLDER ...]], --host_pkey_directories [FOLDER [FOLDER ...]]
-              List of directories where SSH pkeys (in the format `id_*`) may be found
+       -d  [FOLDER  [FOLDER  ...]],  --host_pkey_directories  [FOLDER [FOLDER
+       ...]]
+              List of directories where SSH pkeys (in the format `id_*`)  may
+              be found
 
-sshtunnel 0.1.4                                               June 2018                                                 SSHTUNNEL(1)
+sshtunnel 0.1.4                   June 2018                      SSHTUNNEL(1)

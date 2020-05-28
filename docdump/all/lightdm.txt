@@ -1,4 +1,4 @@
-LIGHTDM(1)                                             General Commands Manual                                            LIGHTDM(1)
+LIGHTDM(1)                 General Commands Manual                 LIGHTDM(1)
 
 NAME
        lightdm - a display manager
@@ -20,7 +20,8 @@ OPTIONS
               Print debugging messages
 
        --test-mode
-              Run as unprivileged user, skipping things that require root access
+              Run  as  unprivileged  user,  skipping things that require root
+              access
 
        --pid-file=FILE
               File to write PID into
@@ -56,4 +57,4 @@ FILES
 SEE ALSO
        dm-tool(1)
 
-                                                           7 November 2013                                                LIGHTDM(1)
+                               7 November 2013                     LIGHTDM(1)

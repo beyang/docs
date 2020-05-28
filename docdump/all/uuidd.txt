@@ -1,4 +1,4 @@
-UUIDD(8)                                                System Administration                                               UUIDD(8)
+UUIDD(8)                    System Administration                    UUIDD(8)
 
 NAME
        uuidd - UUID generation daemon
@@ -7,13 +7,15 @@ SYNOPSIS
        uuidd [options]
 
 DESCRIPTION
-       The uuidd daemon is used by the UUID library to generate universally unique identifiers (UUIDs), especially time-based UUIDs,
-       in a secure and guaranteed-unique fashion, even in the face of large numbers of threads running on different CPUs  trying  to
-       grab UUIDs.
+       The  uuidd  daemon is used by the UUID library to generate universally
+       unique identifiers (UUIDs), especially time-based UUIDs, in  a  secure
+       and  guaranteed-unique  fashion,  even in the face of large numbers of
+       threads running on different CPUs trying to grab UUIDs.
 
 OPTIONS
        -d, --debug
-              Run uuidd in debugging mode.  This prevents uuidd from running as a daemon.
+              Run uuidd in debugging mode.  This prevents uuidd from  running
+              as a daemon.
 
        -F, --no-fork
               Do not daemonize using a double-fork.
@@ -22,34 +24,41 @@ OPTIONS
               If currently a uuidd daemon is running, kill it.
 
        -n, --uuids number
-              When issuing a test request to a running uuidd, request a bulk response of number UUIDs.
+              When  issuing a test request to a running uuidd, request a bulk
+              response of number UUIDs.
 
        -P, --no-pid
               Do not create a pid file.
 
        -p, --pid path
-              Specify   the   pathname   where  the  pid  file  should  be  written.   By  default,  the  pid  file  is  written  to
-              /run/uuidd/uuidd.pid.
+              Specify the pathname where the pid file should be written.   By
+              default, the pid file is written to /run/uuidd/uuidd.pid.
 
        -q, --quiet
               Suppress some failure messages.
 
        -r, --random
-              Test uuidd by trying to connect to a running uuidd daemon and request it to return a random-based UUID.
+              Test  uuidd  by trying to connect to a running uuidd daemon and
+              request it to return a random-based UUID.
 
        -S, --socket-activation
-              Do not create a socket but instead expect it to be provided by the calling process.  This implies --no-fork and  --no-
-              pid.  This option is intended to be used only with systemd(1).  It needs to be enabled with a configure option.
+              Do not create a socket but instead expect it to be provided  by
+              the  calling  process.   This  implies  --no-fork and --no-pid.
+              This option is intended to be used only  with  systemd(1).   It
+              needs to be enabled with a configure option.
 
        -s, --socket path
-              Make  uuidd  use this pathname for the unix-domain socket.  By default, the pathname used is /run/uuidd/request.  This
-              option is primarily for debugging purposes, since the pathname is hard-coded in the libuuid library.
+              Make  uuidd  use  this pathname for the unix-domain socket.  By
+              default, the pathname used is /run/uuidd/request.  This  option
+              is  primarily  for  debugging  purposes,  since the pathname is
+              hard-coded in the libuuid library.
 
        -T, --timeout number
               Make uuidd exit after number seconds of inactivity.
 
        -t, --time
-              Test uuidd by trying to connect to a running uuidd daemon and request it to return a time-based UUID.
+              Test uuidd by trying to connect to a running uuidd  daemon  and
+              request it to return a time-based UUID.
 
        -V, --version
               Output version information and exit.
@@ -71,7 +80,8 @@ SEE ALSO
        uuid(3), uuidgen(1)
 
 AVAILABILITY
-       The uuidd daemon is part of the util-linux package and is available from the Linux Kernel Archive ⟨https://www.kernel.org/pub
-       /linux/utils/util-linux/⟩.
+       The  uuidd  daemon  is part of the util-linux package and is available
+       from the Linux Kernel Archive  ⟨https://www.kernel.org/pub/linux/utils
+       /util-linux/⟩.
 
-util-linux                                                    July 2014                                                     UUIDD(8)
+util-linux                        July 2014                          UUIDD(8)

@@ -1,4 +1,4 @@
-GTESTER(1)                                                  User Commands                                                 GTESTER(1)
+GTESTER(1)                      User Commands                      GTESTER(1)
 
 NAME
        gtester - test running utility
@@ -7,9 +7,11 @@ SYNOPSIS
        gtester [OPTION...] [testprogram]
 
 DESCRIPTION
-       gtester is a utility to run unit tests that have been written using the GLib test framework.
+       gtester is a utility to run unit tests that have been written using
+       the GLib test framework.
 
-       When called with the -o option, gtester writes an XML report of the test results, which can be converted into HTML using the
+       When called with the -o option, gtester writes an XML report of the
+       test results, which can be converted into HTML using the
        gtester-report utility.
 
 OPTIONS
@@ -38,13 +40,16 @@ OPTIONS
                run slow tests, or repeat non-deterministic tests more often
 
            quick
-               do not run slow or performance tests, or do extra repeats of non-deterministic tests (default)
+               do not run slow or performance tests, or do extra repeats of
+               non-deterministic tests (default)
 
            undefined
-               run test cases that deliberately provoke checks or assertion failures, if implemented (default)
+               run test cases that deliberately provoke checks or assertion
+               failures, if implemented (default)
 
            no-undefined
-               do not run test cases that deliberately provoke checks or assertion failures
+               do not run test cases that deliberately provoke checks or
+               assertion failures
 
        -p=TESTPATH
            only run test cases matching TESTPATH
@@ -67,4 +72,4 @@ OPTIONS
 SEE ALSO
        gtester-report(1)
 
-GLib                                                                                                                      GTESTER(1)
+GLib                                                               GTESTER(1)

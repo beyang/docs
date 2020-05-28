@@ -1,4 +1,4 @@
-xdriinfo(1)                                            General Commands Manual                                           xdriinfo(1)
+xdriinfo(1)                General Commands Manual                xdriinfo(1)
 
 NAME
        xdriinfo - query configuration information of DRI drivers
@@ -7,8 +7,9 @@ SYNOPSIS
        xdriinfo [-display displayname] [-version] [command]
 
 DESCRIPTION
-       xdriinfo  can  be used to query configuration information of direct rendering drivers. If no command argument is specified it
-       lists the names of the direct rendering drivers for all screens.
+       xdriinfo can be used to query configuration information of direct ren‐
+       dering drivers. If no command argument is specified it lists the names
+       of the direct rendering drivers for all screens.
 
        Valid options are:
 
@@ -27,8 +28,10 @@ DESCRIPTION
               Print the name of the direct rendering driver for screen.
 
        options screen|driver
-              Print the XML document describing the configuration options of a driver. The  driver  can  be  specified  directly  by
-              driver name or indirectly by screen number. If the driver name is specified directly then no X connection is needed.
+              Print  the XML document describing the configuration options of
+              a driver. The driver can be specified directly by  driver  name
+              or indirectly by screen number. If the driver name is specified
+              directly then no X connection is needed.
 
 ENVIRONMENT
        DISPLAY
@@ -40,4 +43,4 @@ SEE ALSO
 AUTHOR
        Felix Kuehling
 
-X Version 11                                               xdriinfo 1.0.5                                                xdriinfo(1)
+X Version 11                    xdriinfo 1.0.5                    xdriinfo(1)

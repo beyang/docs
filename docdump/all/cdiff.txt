@@ -1,4 +1,4 @@
-CDIFF(1)                                                    User Commands                                                   CDIFF(1)
+CDIFF(1)                        User Commands                        CDIFF(1)
 
 NAME
        cdiff - a wrapper tool for colordiff
@@ -7,15 +7,19 @@ SYNOPSIS
        cdiff {URL|FILE}
 
 DESCRIPTION
-       cdiff is a wrapper for colordiff and will add colour to a diff given in a URL or a file, e.g.
+       cdiff is a wrapper for colordiff and will add colour to a diff given
+       in a URL or a file, e.g.
 
            cdiff http://some.url.com/foo/thing.patch
 
-       It also adds support for reading gzip, bzip2, xz, and lzma compressed diffs, and like colordiff, also supports reading diffs
-       from standard input if URL or a filename is not specified.  cdiff pipes colordiff's output through less -R.
+       It also adds support for reading gzip, bzip2, xz, and lzma compressed
+       diffs, and like colordiff, also supports reading diffs from standard
+       input if URL or a filename is not specified.  cdiff pipes colordiff's
+       output through less -R.
 
 SEE ALSO
-       cdiff is part of the colordiff package, which should be consulted for further reference.
+       cdiff is part of the colordiff package, which should be consulted for
+       further reference.
 
 AUTHORS
        Ville Skyttä
@@ -24,4 +28,4 @@ AUTHORS
        Dave Ewart
            colordiff author, packager for colordiff/cdiff
 
-cdiff                                                        05/21/2015                                                     CDIFF(1)
+cdiff                             05/21/2015                         CDIFF(1)

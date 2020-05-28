@@ -1,4 +1,4 @@
-UNLINK(1)                                                   User Commands                                                  UNLINK(1)
+UNLINK(1)                       User Commands                       UNLINK(1)
 
 NAME
        unlink - call the unlink function to remove the specified file
@@ -20,12 +20,14 @@ AUTHOR
 
 REPORTING BUGS
        GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
-       Report unlink translation bugs to <http://translationproject.org/team/>
+       Report    unlink    translation    bugs   to   <http://translationpro‐
+       ject.org/team/>
 
 COPYRIGHT
-       Copyright    ©    2017    Free    Software    Foundation,    Inc.    License   GPLv3+:   GNU   GPL   version   3   or   later
-       <http://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2017 Free Software Foundation, Inc.  License  GPLv3+:  GNU
+       GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+       This  is  free  software:  you are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 SEE ALSO
        unlink(2)
@@ -33,4 +35,4 @@ SEE ALSO
        Full documentation at: <http://www.gnu.org/software/coreutils/unlink>
        or available locally via: info '(coreutils) unlink invocation'
 
-GNU coreutils 8.28                                          January 2018                                                   UNLINK(1)
+GNU coreutils 8.28               January 2018                       UNLINK(1)

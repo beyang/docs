@@ -1,13 +1,15 @@
-DERDUMP(1)                                               NSS Security Tools                                               DERDUMP(1)
+DERDUMP(1)                    NSS Security Tools                   DERDUMP(1)
 
 NAME
-       derdump_ - Dumps C-sequence strings from a DER encoded certificate file
+       derdump_ - Dumps C-sequence strings from a DER encoded certificate
+       file
 
 SYNOPSIS
        derdump [-r] [-i input-file] [-o output-file]
 
 STATUS
-       This documentation is still work in progress. Please contribute to the initial review in Mozilla NSS bug 836477[1]
+       This documentation is still work in progress. Please contribute to the
+       initial review in Mozilla NSS bug 836477[1]
 
 DESCRIPTION
        derdump dumps C-sequence strings from a DER encode certificate file
@@ -23,25 +25,29 @@ OPTIONS
            Define an output file to use (default is stdout).
 
 ADDITIONAL RESOURCES
-       NSS is maintained in conjunction with PKI and security-related projects through Mozilla dn Fedora. The most closely-related
-       project is Dogtag PKI, with a project wiki at PKI Wiki[2].
+       NSS is maintained in conjunction with PKI and security-related
+       projects through Mozilla dn Fedora. The most closely-related project
+       is Dogtag PKI, with a project wiki at PKI Wiki[2].
 
-       For information specifically about NSS, the NSS project wiki is located at Mozilla NSS site[3]. The NSS site relates directly
-       to NSS code changes and releases.
+       For information specifically about NSS, the NSS project wiki is
+       located at Mozilla NSS site[3]. The NSS site relates directly to NSS
+       code changes and releases.
 
        Mailing lists: pki-devel@redhat.com and pki-users@redhat.com
 
        IRC: Freenode at #dogtag-pki
 
 AUTHORS
-       The NSS tools were written and maintained by developers with Netscape and now with Red Hat.
+       The NSS tools were written and maintained by developers with Netscape
+       and now with Red Hat.
 
-       Authors: Gerhardus Geldenhuis <gerhardus.geldenhuis@gmail.com>. Elio Maldonado <emaldona@redhat.com>, Deon Lackey
-       <dlackey@redhat.com>
+       Authors: Gerhardus Geldenhuis <gerhardus.geldenhuis@gmail.com>. Elio
+       Maldonado <emaldona@redhat.com>, Deon Lackey <dlackey@redhat.com>
 
 LICENSE
-       Licensed under the Mozilla Public License, version 1.1, and/or the GNU General Public License, version 2 or later, and/or the
-       GNU Lesser General Public License, version 2.1 or later.
+       Licensed under the Mozilla Public License, version 1.1, and/or the GNU
+       General Public License, version 2 or later, and/or the GNU Lesser
+       General Public License, version 2.1 or later.
 
 NOTES
         1. Mozilla NSS bug 836477
@@ -53,4 +59,4 @@ NOTES
         3. Mozilla NSS site
            http://www.mozilla.org/projects/security/pki/nss/
 
-nss-tools                                                 15 February 2013                                                DERDUMP(1)
+nss-tools                      15 February 2013                    DERDUMP(1)

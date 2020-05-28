@@ -1,4 +1,4 @@
-WHO(1)                                                      User Commands                                                     WHO(1)
+WHO(1)                          User Commands                          WHO(1)
 
 NAME
        who - show who is logged on
@@ -21,8 +21,8 @@ DESCRIPTION
        -H, --heading
               print line of column headings
 
-       --ips  print  ips  instead  of  hostnames.  with --lookup, canonicalizes based on stored IP, if available, rather than stored
-              hostname
+       --ips  print  ips  instead  of hostnames. with --lookup, canonicalizes
+              based on stored IP, if available, rather than stored hostname
 
        -l, --login
               print system login processes
@@ -64,8 +64,9 @@ DESCRIPTION
        --version
               output version information and exit
 
-       If FILE is not specified, use /var/run/utmp.  /var/log/wtmp as FILE is common.  If ARG1 ARG2 given, -m presumed:  'am  i'  or
-       'mom likes' are usual.
+       If FILE is not specified, use /var/run/utmp.  /var/log/wtmp as FILE is
+       common.   If  ARG1  ARG2 given, -m presumed: 'am i' or 'mom likes' are
+       usual.
 
 AUTHOR
        Written by Joseph Arceneaux, David MacKenzie, and Michael Stone.
@@ -75,12 +76,13 @@ REPORTING BUGS
        Report who translation bugs to <http://translationproject.org/team/>
 
 COPYRIGHT
-       Copyright    ©    2017    Free    Software    Foundation,    Inc.    License   GPLv3+:   GNU   GPL   version   3   or   later
-       <http://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright © 2017 Free Software Foundation, Inc.  License  GPLv3+:  GNU
+       GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+       This  is  free  software:  you are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 SEE ALSO
        Full documentation at: <http://www.gnu.org/software/coreutils/who>
        or available locally via: info '(coreutils) who invocation'
 
-GNU coreutils 8.28                                          January 2018                                                      WHO(1)
+GNU coreutils 8.28               January 2018                          WHO(1)

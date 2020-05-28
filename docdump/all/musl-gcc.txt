@@ -1,0 +1,29 @@
+musl-gcc(1)                General Commands Manual                musl-gcc(1)
+
+NAME
+       musl-gcc - musl wrapper for gcc
+
+SYNOPSIS
+       musl-gcc [OPTION...]  FILENAME...
+
+DESCRIPTION
+       musl-gcc acts as a wrapper around gcc(1) which sets the correct system
+       include paths for linking with musl libc library.
+
+       Since musl-gcc is a simple wrapper around gcc(1) it uses the same
+       command line arguments.
+
+FILES
+       /usr/lib/$ARCH-linux-musl/musl-gcc.specs musl-gcc spec file that
+       defines new/overwritten include paths.
+
+SEE ALSO
+       gcc(1)
+
+AUTHORS
+       Kevin Bortis <pkgs@bortis.ch>.
+
+       musl-gcc was written by
+       Rich Felker <dalias@aerifal.cx>
+
+Linux                          August 23, 2013                    musl-gcc(1)

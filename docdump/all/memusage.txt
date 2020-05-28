@@ -1,4 +1,4 @@
-MEMUSAGE(1)                                               Linux user manual                                              MEMUSAGE(1)
+MEMUSAGE(1)                   Linux user manual                   MEMUSAGE(1)
 
 NAME
        memusage - profile memory usage of a program
@@ -7,43 +7,60 @@ SYNOPSIS
        memusage [option]... program [programoption]...
 
 DESCRIPTION
-       memusage  is  a bash script which profiles memory usage of the program, program.  It preloads the libmemusage.so library into
-       the caller's environment (via the LD_PRELOAD environment variable; see ld.so(8)).  The libmemusage.so library  traces  memory
-       allocation  by  intercepting calls to malloc(3), calloc(3), free(3), and realloc(3); optionally, calls to mmap(2), mremap(2),
-       and munmap(2) can also be intercepted.
+       memusage  is a bash script which profiles memory usage of the program,
+       program.  It preloads the libmemusage.so  library  into  the  caller's
+       environment  (via  the LD_PRELOAD environment variable; see ld.so(8)).
+       The libmemusage.so library traces memory  allocation  by  intercepting
+       calls  to  malloc(3),  calloc(3), free(3), and realloc(3); optionally,
+       calls to mmap(2), mremap(2), and munmap(2) can also be intercepted.
 
-       memusage can output the collected data in textual form, or it can use memusagestat(1) (see the -p option,  below) to create a
-       PNG file containing graphical representation of the collected data.
+       memusage can output the collected data in textual form, or it can  use
+       memusagestat(1)  (see the -p option,  below) to create a PNG file con‐
+       taining graphical representation of the collected data.
 
    Memory usage summary
-       The "Memory usage summary" line output by memusage contains three fields:
+       The "Memory usage summary" line  output  by  memusage  contains  three
+       fields:
 
            heap total
-                  Sum  of  size arguments of all malloc(3) calls, products of arguments (nmemb*size) of all calloc(3) calls, and sum
-                  of length arguments of all mmap(2) calls.  In the case of realloc(3) and mremap(2), if the new size of an  alloca‐
-                  tion is larger than the previous size, the sum of all such differences (new size minus old size) is added.
+                  Sum  of  size arguments of all malloc(3) calls, products of
+                  arguments (nmemb*size) of all calloc(3) calls, and  sum  of
+                  length  arguments  of  all  mmap(2)  calls.  In the case of
+                  realloc(3) and mremap(2), if the new size of an  allocation
+                  is  larger than the previous size, the sum of all such dif‐
+                  ferences (new size minus old size) is added.
 
            heap peak
-                  Maximum  of  all size arguments of malloc(3), all products of nmemb*size of calloc(3), all size arguments of real‐
-                  loc(3), length arguments of mmap(2), and new_size arguments of mremap(2).
+                  Maximum of all size arguments of malloc(3), all products of
+                  nmemb*size  of calloc(3), all size arguments of realloc(3),
+                  length arguments of  mmap(2),  and  new_size  arguments  of
+                  mremap(2).
 
            stack peak
-                  Before the first call to any monitored function, the stack pointer address (base stack pointer) is  saved.   After
-                  each  function  call, the actual stack pointer address is read and the difference from the base stack pointer com‐
-                  puted.  The maximum of these differences is then the stack peak.
+                  Before  the first call to any monitored function, the stack
+                  pointer address (base stack pointer) is saved.  After  each
+                  function call, the actual stack pointer address is read and
+                  the difference from the base stack pointer  computed.   The
+                  maximum of these differences is then the stack peak.
 
-       Immediately following this summary line, a table shows the number calls, total memory allocated or deallocated, and number of
-       failed  calls for each intercepted function.  For realloc(3) and mremap(2), the additional field "nomove" shows reallocations
-       that changed the address of a block, and the additional "dec" field shows reallocations that decreased the size of the block.
-       For  realloc(3),  the additional field "free" shows reallocations that caused a block to be freed (i.e., the reallocated size
-       was 0).
+       Immediately  following  this  summary  line,  a table shows the number
+       calls, total memory allocated or deallocated,  and  number  of  failed
+       calls  for  each  intercepted function.  For realloc(3) and mremap(2),
+       the additional field "nomove" shows  reallocations  that  changed  the
+       address of a block, and the additional "dec" field shows reallocations
+       that decreased the size of the block.  For realloc(3), the  additional
+       field  "free"  shows  reallocations  that  caused  a block to be freed
+       (i.e., the reallocated size was 0).
 
-       The "realloc/total memory" of the table output by memusage does not reflect cases where realloc(3) is used  to  reallocate  a
-       block of memory to have a smaller size than previously.  This can cause sum of all "total memory" cells (excluding "free") to
-       be larger than the "free/total memory" cell.
+       The "realloc/total memory" of the table output by  memusage  does  not
+       reflect cases where realloc(3) is used to reallocate a block of memory
+       to have a smaller size than previously.  This can  cause  sum  of  all
+       "total  memory"  cells  (excluding  "free")  to  be  larger  than  the
+       "free/total memory" cell.
 
    Histogram for block sizes
-       The "Histogram for block sizes" provides a breakdown of memory allocations into various bucket sizes.
+       The "Histogram for block sizes" provides a breakdown of memory alloca‐
+       tions into various bucket sizes.
 
 OPTIONS
        -n name, --progname=name
@@ -79,7 +96,8 @@ OPTIONS
        The following options apply only when generating graphical output:
 
        -t, --time-based
-              Use time (rather than number of function calls) as the scale for the X axis.
+              Use  time  (rather  than number of function calls) as the scale
+              for the X axis.
 
        -T, --total
               Also draw a graph of total memory use.
@@ -100,9 +118,11 @@ BUGS
        To report bugs, see ⟨http://www.gnu.org/software/libc/bugs.html⟩
 
 EXAMPLE
-       Below is a simple program that reallocates a block of memory in cycles that rise to a peak before then cyclically  reallocat‐
-       ing  the  memory  in  smaller  blocks that return to zero.  After compiling the program and running the following commands, a
-       graph of the memory usage of the program can be found in the file memusage.png:
+       Below is a simple program that reallocates a block of memory in cycles
+       that  rise to a peak before then cyclically reallocating the memory in
+       smaller blocks that return to zero.  After compiling the  program  and
+       running  the  following  commands,  a graph of the memory usage of the
+       program can be found in the file memusage.png:
 
            $ memusage --data=memusage.dat ./a.out
            ...
@@ -162,7 +182,9 @@ SEE ALSO
        memusagestat(1), mtrace(1) ld.so(8)
 
 COLOPHON
-       This page is part of release 4.15 of the Linux man-pages project.  A description of the project, information about  reporting
-       bugs, and the latest version of this page, can be found at https://www.kernel.org/doc/man-pages/.
+       This page is part of release 4.15 of the Linux man-pages  project.   A
+       description  of the project, information about reporting bugs, and the
+       latest    version    of    this    page,    can    be     found     at
+       https://www.kernel.org/doc/man-pages/.
 
-GNU                                                          2017-09-15                                                  MEMUSAGE(1)
+GNU                               2017-09-15                      MEMUSAGE(1)

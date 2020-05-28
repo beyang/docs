@@ -1,11 +1,11 @@
-xkbbell(1)                                             General Commands Manual                                            xkbbell(1)
+xkbbell(1)                 General Commands Manual                 xkbbell(1)
 
 NAME
        xkbbell - XKB extension user utility
 
 SYNOPSIS
-       xkbbell  [-display  <dpy>] [-synch] [-dev <id>] [-force] [-nobeep] [-bf <id>] [-kf <id>] [-v <volume>] [-w <id>] [-help|-ver‐
-       sion]
+       xkbbell  [-display <dpy>] [-synch] [-dev <id>] [-force] [-nobeep] [-bf
+       <id>] [-kf <id>] [-v <volume>] [-w <id>] [-help|-version]
 
 DESCRIPTION
        user utility
@@ -39,6 +39,7 @@ OPTIONS
        -version
                print program version and exit
 
-       If neither device nor feedback are specified, xkbbell uses the default values for the core keyboard device.
+       If neither device nor feedback are specified, xkbbell uses the default
+       values for the core keyboard device.
 
-X Version 11                                               xkbutils 1.0.4                                                 xkbbell(1)
+X Version 11                    xkbutils 1.0.4                     xkbbell(1)

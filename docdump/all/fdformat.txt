@@ -1,4 +1,4 @@
-FDFORMAT(8)                                             System Administration                                            FDFORMAT(8)
+FDFORMAT(8)                 System Administration                 FDFORMAT(8)
 
 NAME
        fdformat - low-level format a floppy disk
@@ -7,8 +7,9 @@ SYNOPSIS
        fdformat [options] device
 
 DESCRIPTION
-       fdformat does a low-level format on a floppy disk.  device is usually one of the following (for floppy devices the major = 2,
-       and the minor is shown for informational purposes only):
+       fdformat  does a low-level format on a floppy disk.  device is usually
+       one of the following (for floppy devices the major = 2, and the  minor
+       is shown for informational purposes only):
 
               /dev/fd0d360  (minor = 4)
               /dev/fd0h1200 (minor = 8)
@@ -30,8 +31,10 @@ DESCRIPTION
               /dev/fd1h720  (minor = 25)
               /dev/fd1H1440 (minor = 29)
 
-       The generic floppy devices, /dev/fd0 and /dev/fd1, will fail to work with fdformat when a non-standard format is being  used,
-       or if the format has not been autodetected earlier.  In this case, use setfdprm(8) to load the disk parameters.
+       The  generic  floppy devices, /dev/fd0 and /dev/fd1, will fail to work
+       with fdformat when a non-standard format is being used, or if the for‐
+       mat  has not been autodetected earlier.  In this case, use setfdprm(8)
+       to load the disk parameters.
 
 OPTIONS
        -f, --from N
@@ -41,10 +44,12 @@ OPTIONS
               Stop at the track N.
 
        -r, --repair N
-              Try to repair tracks failed during the verification (max N retries).
+              Try to repair tracks failed  during  the  verification  (max  N
+              retries).
 
        -n, --no-verify
-              Skip the verification that is normally performed after the formatting.
+              Skip the verification that is normally performed after the for‐
+              matting.
 
        -V, --version
               Display version information and exit.
@@ -59,7 +64,7 @@ AUTHOR
        Werner Almesberger (almesber@nessie.cs.id.ethz.ch)
 
 AVAILABILITY
-       The  fdformat  command  is  part of the util-linux package and is available from https://www.kernel.org/pub/linux/utils/util-
-       linux/.
+       The fdformat command is part of the util-linux package and  is  avail‐
+       able from https://www.kernel.org/pub/linux/utils/util-linux/.
 
-util-linux                                                    July 2014                                                  FDFORMAT(8)
+util-linux                        July 2014                       FDFORMAT(8)

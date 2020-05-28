@@ -1,0 +1,19 @@
+musl-ldd(1)                General Commands Manual                musl-ldd(1)
+
+NAME
+       musl-ldd - print musl shared library dependencies
+
+SYNOPSIS
+       musl-ldd FILENAME...
+
+DESCRIPTION
+       musl-ldd prints the shared libraries required by the given program or
+       shared library that is dynamicaly linked to the musl libc.
+
+AUTHORS
+       Kevin Bortis <pkgs@bortis.ch>.
+
+       musl was written by
+       Rich Felker <dalias@aerifal.cx>
+
+Linux                         February 23, 2014                   musl-ldd(1)

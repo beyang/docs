@@ -1,10 +1,11 @@
-zipnote(1)                                             General Commands Manual                                            zipnote(1)
+zipnote(1)                 General Commands Manual                 zipnote(1)
 
 NAME
        zipsplit - split a zipfile into smaller zipfiles
 
 SYNOPSIS
-       zipsplit [-t] [-i] [-p] [-s] [-n size] [-r room] [-b path] [-h] [-v] [-L] zipfile
+       zipsplit  [-t]  [-i] [-p] [-s] [-n size] [-r room] [-b path] [-h] [-v]
+       [-L] zipfile
 
 ARGUMENTS
        zipfile  Zipfile to split.
@@ -12,7 +13,8 @@ ARGUMENTS
 OPTIONS
        -t     Report how many files it will take, but don't make them.
 
-       -i     Make index (zipsplit.idx) and count its size against first zip file.
+       -i     Make index (zipsplit.idx) and count its size against first  zip
+              file.
 
        -n size
               Make zip files no larger than "size" (default = 36000).
@@ -48,4 +50,4 @@ SEE ALSO
 AUTHOR
        Info-ZIP
 
-                                                         v3.0 of 8 May 2008                                               zipnote(1)
+                              v3.0 of 8 May 2008                   zipnote(1)

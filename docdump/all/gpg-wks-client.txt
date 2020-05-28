@@ -1,0 +1,136 @@
+GPG-WKS-CLIENT(1)               User Commands               GPG-WKS-CLIENT(1)
+
+NAME
+       gpg-wks-client - Client for the Web Key Service
+
+SYNOPSIS
+       gpg-wks-client [COMMAND] [OPTIONS] [ARGS]
+
+DESCRIPTION
+       gpg-wks-client  is  a  simple command line client for the Web Key Ser‐
+       vice.  The executable is usually located in /usr/lib/gnupg.  It allows
+       a  user  to  create a publication request and to respond to a received
+       confirmation request.  Communication with the Web Key Service is  done
+       via email.  It also can lookup the fingerprint of a USER-ID in the Web
+       Key Directory.
+
+COMMANDS
+       --supported USER-ID
+              Check whether provider of the given USER-ID  supports  the  Web
+              Key  Service  protocol, i.e. whether it has a Web Key Directory
+              providing a submission address.
+
+              Similar to:
+
+                   gpg-connect-agent --dirmngr 'WKD_GET --submission-address -- USER-ID' /bye
+
+       --check USER-ID
+              Check whether a key is available, and whether the listed key is
+              valid for the requested USER-ID.  You might want to use
+
+                   gpg -v --auto-key-locate=clear,wkd,nodefault --locate-key USER-ID
+
+              instead.
+
+       --create FINGERPRINT USER-ID
+              Create  a  publication  request for the USER-ID in the key with
+              the given FINGERPRINT.  List all possible keys  (including  the
+              fingerprint) for a USER-ID with:
+
+                   gpg --list-key USER-ID
+
+              By  default  the publication request will be printed to STDOUT.
+              You can also write it to a file using the  --output  option  or
+              send it using sendmail with the --send option.
+
+       --receive
+              Receive  a  MIME  confirmation request on STDIN and acknowledge
+              it.
+
+              By default the confirmation response will be printed to STDOUT.
+              You  can  also  write it to a file using the --output option or
+              send it using sendmail with the --send option.
+
+       --read Receive  a  plain  text  confirmation   request.   Similar   to
+              --receive, but takes only the message body on STDIN.
+
+       --version
+              Show program version and some meta information.
+
+       -h, --help
+              Output a short usage information.
+
+       --warranty
+              Print warranty information.
+
+       --dump-options
+              Dump all available options and commands.
+
+OPTIONS
+       -v, --verbose
+              Enable verbose output.
+
+       -q, --quiet
+              Be somewhat more quiet.
+
+       --send Send the mail using sendmail.
+
+       -o, --output FILE
+              Write the mail to FILE.
+
+       --status-fd FD
+              Write status info to this FD.
+
+       --debug
+              Set   debugging   flags.   All flags are or-ed and flags may be
+              given in C syntax (e.g. 0x0042) or as a comma separated list of
+              flag  names.   To  get a list of all supported flags the single
+              word "help" can be used.
+
+       --gpg GPG
+              Use the specified command instead of gpg.
+
+       --fake-submission-addr MAILADDR
+              Send mail to MAILADDR instead of the submission address queried
+              through Web Key Service.
+
+EXAMPLES
+   Send a publication request
+       First  find  the  fingerprint (a long string of hex digits) of the key
+       you want to publish:
+
+           gpg --list-key "Alice <alice@example.com>"
+
+       Now create and send the publication request:
+
+           /usr/lib/gnupg/gpg-wks-client --create --send 0123456789ABCDEF0123456789ABCDEF01234567 "Alice <alice@example.com>"
+
+       Instead  of  "Alice  <alice@example.com>"  you  can  also  just   give
+       alice@example.com.
+
+   Confirm a confirmation request
+       Paste  the  full  mail  containing the confirmation request (including
+       headers) you got from the Web Key Service on STDIN after starting:
+
+           /usr/lib/gnupg/gpg-wks-client --receive --send
+
+SEE ALSO
+       —   Latest draft for the protocol: <https://tools.ietf.org/html/draft-
+           koch-openpgp-webkey-service>
+
+       —   GnuPG on Web Key Service: <https://wiki.gnupg.org/WKS>
+
+BUGS
+       Please report bugs to <https://dev.gnupg.org>.
+
+COPYRIGHT
+       Copyright  ©  2017 Free Software Foundation, Inc.  License GPLv3+: GNU
+       GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+
+       This is free software: you are free to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+       This  manpage was written by Stefan Bühler for the Debian distribution
+       (but may be used by others).
+
+gpg-wks-client (GnuPG) 2.1.20      May 2017                 GPG-WKS-CLIENT(1)

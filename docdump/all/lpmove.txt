@@ -1,4 +1,4 @@
-lpmove(8)                                                    Apple Inc.                                                    lpmove(8)
+lpmove(8)                         Apple Inc.                        lpmove(8)
 
 NAME
        lpmove - move a job or all jobs to a new destination
@@ -8,8 +8,8 @@ SYNOPSIS
        lpmove [ -E ] [ -h server[:port] ] [ -U username ] source destination
 
 DESCRIPTION
-       lpmove  moves  the  specified job or all jobs from source to destination. job can be the job ID number or the old destination
-       and job ID.
+       lpmove moves the specified job or all jobs from source to destination.
+       job can be the job ID number or the old destination and job ID.
 
 OPTIONS
        The lpmove command supports the following options:
@@ -42,4 +42,4 @@ SEE ALSO
 COPYRIGHT
        Copyright © 2007-2017 by Apple Inc.
 
-26 May 2016                                                     CUPS                                                       lpmove(8)
+26 May 2016                          CUPS                           lpmove(8)

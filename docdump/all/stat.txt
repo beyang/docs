@@ -1,4 +1,4 @@
-STAT(1)                                                     User Commands                                                    STAT(1)
+STAT(1)                         User Commands                         STAT(1)
 
 NAME
        stat - display file or file system status
@@ -9,7 +9,8 @@ SYNOPSIS
 DESCRIPTION
        Display file or file system status.
 
-       Mandatory arguments to long options are mandatory for short options too.
+       Mandatory  arguments  to  long options are mandatory for short options
+       too.
 
        -L, --dereference
               follow links
@@ -18,10 +19,12 @@ DESCRIPTION
               display file system status instead of file status
 
        -c  --format=FORMAT
-              use the specified FORMAT instead of the default; output a newline after each use of FORMAT
+              use the specified FORMAT instead of the default; output a  new‐
+              line after each use of FORMAT
 
        --printf=FORMAT
-              like --format, but interpret backslash escapes, and do not output a mandatory trailing newline; if you want a newline,
+              like --format, but interpret backslash escapes, and do not out‐
+              put a mandatory  trailing  newline;  if  you  want  a  newline,
               include \n in FORMAT
 
        -t, --terse
@@ -70,9 +73,11 @@ DESCRIPTION
 
        %s     total size, in bytes
 
-       %t     major device type in hex, for character/block device special files
+       %t     major  device  type  in hex, for character/block device special
+              files
 
-       %T     minor device type in hex, for character/block device special files
+       %T     minor device type in hex, for  character/block  device  special
+              files
 
        %u     user ID of owner
 
@@ -120,8 +125,9 @@ DESCRIPTION
 
        %T     file system type in human readable form
 
-       NOTE: your shell may have its own version of stat, which usually supersedes the version described here.  Please refer to your
-       shell's documentation for details about the options it supports.
+       NOTE:  your  shell  may  have  its  own version of stat, which usually
+       supersedes the version described here.  Please refer to  your  shell's
+       documentation for details about the options it supports.
 
 AUTHOR
        Written by Michael Meskes.
@@ -131,9 +137,10 @@ REPORTING BUGS
        Report stat translation bugs to <http://translationproject.org/team/>
 
 COPYRIGHT
-       Copyright    ©    2017    Free    Software    Foundation,    Inc.    License   GPLv3+:   GNU   GPL   version   3   or   later
-       <http://gnu.org/licenses/gpl.html>.
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2017 Free Software Foundation, Inc.  License GPLv3+: GNU
+       GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+       This is free software: you are free to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 SEE ALSO
        stat(2)
@@ -141,4 +148,4 @@ SEE ALSO
        Full documentation at: <http://www.gnu.org/software/coreutils/stat>
        or available locally via: info '(coreutils) stat invocation'
 
-GNU coreutils 8.28                                          January 2018                                                     STAT(1)
+GNU coreutils 8.28               January 2018                         STAT(1)

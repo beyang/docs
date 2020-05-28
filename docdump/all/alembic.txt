@@ -1,15 +1,18 @@
-ALEMBIC(1)                                                  User Commands                                                 ALEMBIC(1)
+ALEMBIC(1)                      User Commands                      ALEMBIC(1)
 
 NAME
-       alembic - lightweight database migration tool for usage with the SQLAlchemy
+       alembic  -  lightweight  database  migration  tool  for usage with the
+       SQLAlchemy
 
 DESCRIPTION
        usage: alembic [-h] [-c CONFIG] [-n NAME] [-x X] [--raiseerr]
 
-              {branches, current, downgrade, edit, heads, history, init, list_templates, merge, revision, show, stamp, upgrade} ...
+              {branches, current,  downgrade,  edit,  heads,  history,  init,
+              list_templates, merge, revision, show, stamp, upgrade} ...
 
    positional arguments:
-              {branches, current, downgrade, edit, heads, history, init, list_templates, merge, revision, show, stamp, upgrade}
+              {branches,  current,  downgrade,  edit,  heads,  history, init,
+              list_templates, merge, revision, show, stamp, upgrade}
 
        branches
               Show current branch points
@@ -32,14 +35,16 @@ DESCRIPTION
        list_templates
               List available templates
 
-       merge  Merge two revisions together. Creates a new migration file. .. versionadded:: 0.7.0 .. seealso:: :ref:`branches`
+       merge  Merge two revisions together. Creates a new migration file.  ..
+              versionadded:: 0.7.0 .. seealso:: :ref:`branches`
 
        revision
               Create a new revision file.
 
        show   Show the revision(s) denoted by the given symbol.
 
-       stamp  'stamp' the revision table with the given revision; don't run any migrations.
+       stamp  'stamp'  the  revision table with the given revision; don't run
+              any migrations.
 
        upgrade
               Upgrade to a later version.
@@ -54,9 +59,10 @@ DESCRIPTION
        -n NAME, --name NAME
               Name of section in .ini file to use for Alembic config
 
-       -x X   Additional arguments consumed by custom env.py scripts, e.g. -x setting1=somesetting -x setting2=somesetting
+       -x X   Additional arguments consumed by custom env.py scripts, e.g. -x
+              setting1=somesetting -x setting2=somesetting
 
        --raiseerr
               Raise a full stack trace on error
 
-alembic 0.8.8                                                August 2017                                                  ALEMBIC(1)
+alembic 0.8.8                    August 2017                       ALEMBIC(1)

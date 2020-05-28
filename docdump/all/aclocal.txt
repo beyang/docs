@@ -1,4 +1,4 @@
-ACLOCAL(1)                                                  User Commands                                                 ACLOCAL(1)
+ACLOCAL(1)                      User Commands                      ACLOCAL(1)
 
 NAME
        aclocal - manual page for aclocal 1.15.1
@@ -17,7 +17,8 @@ OPTIONS
               directory holding third-party system-wide files
 
        --diff[=COMMAND]
-              run COMMAND [diff -u] on M4 files that would be changed (implies --install and --dry-run)
+              run  COMMAND  [diff  -u]  on  M4  files  that  would be changed
+              (implies --install and --dry-run)
 
        --dry-run
               pretend to, but do not actually update any file
@@ -36,7 +37,8 @@ OPTIONS
               put output in FILE (default aclocal.m4)
 
        --print-ac-dir
-              print name of directory holding system-wide third-party m4 files, then exit
+              print name of  directory  holding  system-wide  third-party  m4
+              files, then exit
 
        --verbose
               don't be silent
@@ -73,16 +75,18 @@ REPORTING BUGS
        General help using GNU software: <http://www.gnu.org/gethelp/>.
 
 COPYRIGHT
-       Copyright    ©    2017    Free    Software    Foundation,    Inc.    License   GPLv2+:   GNU   GPL   version   2   or   later
-       <http://gnu.org/licenses/gpl-2.0.html>
-       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+       Copyright  ©  2017 Free Software Foundation, Inc.  License GPLv2+: GNU
+       GPL version 2 or later <http://gnu.org/licenses/gpl-2.0.html>
+       This is free software: you are free to  change  and  redistribute  it.
+       There is NO WARRANTY, to the extent permitted by law.
 
 SEE ALSO
-       The full documentation for aclocal is maintained as a Texinfo  manual.   If  the  info  and  aclocal  programs  are  properly
-       installed at your site, the command
+       The  full documentation for aclocal is maintained as a Texinfo manual.
+       If the info and aclocal programs are properly installed at your  site,
+       the command
 
               info aclocal
 
        should give you access to the complete manual.
 
-aclocal 1.15.1                                               March 2018                                                   ACLOCAL(1)
+aclocal 1.15.1                    March 2018                       ACLOCAL(1)

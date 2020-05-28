@@ -1,4 +1,4 @@
-tgatoppm(1)                                            General Commands Manual                                           tgatoppm(1)
+tgatoppm(1)                General Commands Manual                tgatoppm(1)
 
 NAME
        tgatoppm - convert TrueVision Targa file into a portable pixmap
@@ -7,16 +7,21 @@ SYNOPSIS
        tgatoppm [--alphaout={alpha-filename,-}] [--headerdump] tga-filename
 
 DESCRIPTION
-       Reads a TrueVision Targa file as input.  Produces a portable pixmap as output.
+       Reads a TrueVision Targa file as input.  Produces a portable pixmap as
+       output.
 
 OPTIONS
        --alphaout=alpha-filename
-              tgatoppm  creates  a PGM (portable graymap) file containing the alpha channel values in the input image.  If the input
-              image doesn't contain an alpha channel, the alpha-filename file contains all zero (transparent) alpha values.  If  you
-              don't  specify  --alphaout,  tgatoppm  does  not  generate an alpha file, and if the input image has an alpha channel,
-              tgatoppm simply discards it.
+              tgatoppm creates a PGM (portable graymap) file  containing  the
+              alpha  channel  values  in the input image.  If the input image
+              doesn't contain an alpha channel, the alpha-filename file  con‐
+              tains  all zero (transparent) alpha values.  If you don't spec‐
+              ify --alphaout, tgatoppm does not generate an alpha  file,  and
+              if  the  input image has an alpha channel, tgatoppm simply dis‐
+              cards it.
 
-              If you specify - as the filename, tgatoppm writes the alpha output to Standard Output and discards the image.
+              If you specify - as the filename,  tgatoppm  writes  the  alpha
+              output to Standard Output and discards the image.
 
               See pnmcomp(1) for one way to use the alpha output file.
 
@@ -36,4 +41,4 @@ AUTHOR
 
        Copyright (C) 1989 by Jef Poskanzer.
 
-                                                            02 April 2000                                                tgatoppm(1)
+                                02 April 2000                     tgatoppm(1)

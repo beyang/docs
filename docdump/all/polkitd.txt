@@ -1,4 +1,4 @@
-POLKITD(8)                                                     polkitd                                                    POLKITD(8)
+POLKITD(8)                         polkitd                         POLKITD(8)
 
 NAME
        polkitd - PolicyKit daemon
@@ -7,18 +7,22 @@ SYNOPSIS
        polkitd
 
 DESCRIPTION
-       polkitd provides the org.freedesktop.PolicyKit1 D-Bus service on the system message bus. Users or administrators should never
-       need to start this daemon as it will be automatically started by dbus-daemon(1) whenever an application calls into the
-       service.
+       polkitd provides the org.freedesktop.PolicyKit1 D-Bus service on the
+       system message bus. Users or administrators should never need to start
+       this daemon as it will be automatically started by dbus-daemon(1)
+       whenever an application calls into the service.
 
 AUTHOR
-       Written by David Zeuthen <davidz@redhat.com> with a lot of help from many others.
+       Written by David Zeuthen <davidz@redhat.com> with a lot of help from
+       many others.
 
 BUGS
-       Please send bug reports to either the distribution or the polkit-devel mailing list, see the link
-       http://lists.freedesktop.org/mailman/listinfo/polkit-devel on how to subscribe.
+       Please send bug reports to either the distribution or the polkit-devel
+       mailing list, see the link
+       http://lists.freedesktop.org/mailman/listinfo/polkit-devel on how to
+       subscribe.
 
 SEE ALSO
        polkit(8)
 
-polkit                                                        May 2009                                                    POLKITD(8)
+polkit                             May 2009                        POLKITD(8)

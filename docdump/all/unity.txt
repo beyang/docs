@@ -1,4 +1,4 @@
-unity(1)                                                 Linux User's Manual                                                unity(1)
+unity(1)                     Linux User's Manual                     unity(1)
 
 NAME
        unity - wrapper for starting the unity shell and handling fallback
@@ -7,13 +7,15 @@ SYNOPSIS
        unity [options]
 
 DESCRIPTION
-       The  unity  program can be used to start the Unity shell as a compiz module, and to specify how to handle logging, debugging,
-       as well as how to deal with the user's profile.
+       The  unity  program  can  be used to start the Unity shell as a compiz
+       module, and to specify how to handle logging, debugging,  as  well  as
+       how to deal with the user's profile.
 
 OPTIONS
        --advanced-debug
-              Runs unity under debugging (using gdb or another debugger tool) to help  tracking  issues.  Should  only  be  used  on
-              request from a developer following a bug report.
+              Runs unity under debugging (using gdb or another debugger tool)
+              to help tracking issues. Should only be used on request from  a
+              developer following a bug report.
 
        --compiz-path COMPIZ_PATH
               Runs the compositor from a non-standard location.
@@ -25,7 +27,8 @@ OPTIONS
               Prints a usage message and exits.
 
        --log filename
-              This parameter, followed by a path or filename, tells the Unity shell to store logs in the specified file.
+              This parameter, followed by a path or filename, tells the Unity
+              shell to store logs in the specified file.
 
        --replace
               Deprecated option for backwards compatibility.  Has no effect.
@@ -41,4 +44,4 @@ OPTIONS
 SEE ALSO
        unity-panel-service (1)
 
-                                                           09 August 2014                                                   unity(1)
+                                09 August 2014                       unity(1)

@@ -1,4 +1,4 @@
-GENL(8)                                                         Linux                                                        GENL(8)
+GENL(8)                             Linux                             GENL(8)
 
 NAME
        genl - generic netlink utility frontend
@@ -15,8 +15,10 @@ SYNOPSIS
        PARMS := { name NAME | id ID }
 
 DESCRIPTION
-       The  genl  utility  provides  a  simple  frontend  to the generic netlink library. Although it's designed to support multiple
-       OBJECTs, for now only the ctrl object is available, which is used to query the generic netlink controller.
+       The  genl  utility  provides  a simple frontend to the generic netlink
+       library. Although it's designed to support multiple OBJECTs,  for  now
+       only  the ctrl object is available, which is used to query the generic
+       netlink controller.
 
    ctrl
        The generic netlink controller can be queried in various ways:
@@ -28,7 +30,8 @@ DESCRIPTION
        monitor
               Listen for generic netlink notifications.
 
-       get    Query the controller for a given user, identified either by name or id.
+       get    Query the controller for a given  user,  identified  either  by
+              name or id.
 
 OPTIONS
        genl supports the following options.
@@ -56,4 +59,4 @@ AUTHOR
 
        This manual page was written by Petr Sabata <contyk@redhat.com>.
 
-iproute2                                                     29 Oct 2015                                                     GENL(8)
+iproute2                         29 Oct 2015                          GENL(8)

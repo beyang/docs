@@ -1,7 +1,8 @@
-KERNELOOPS(8)                                          System Manager's Manual                                         KERNELOOPS(8)
+KERNELOOPS(8)              System Manager's Manual              KERNELOOPS(8)
 
 NAME
-       kerneloops - program to collect and submit kernel oopses to oops.kernel.org
+       kerneloops  - program to collect and submit kernel oopses to oops.ker‐
+       nel.org
 
 SYNOPSIS
        kerneloops
@@ -9,12 +10,15 @@ SYNOPSIS
 DESCRIPTION
        This manual page documents briefly the kerneloops commands.
 
-       kerneloops  is  a  program  that  collects kernel crash information and then submits the extracted signature to the oops.ker‐
-       nel.org website for statistical analysis and presentation to the Linux kernel developers.
+       kerneloops is a program that collects  kernel  crash  information  and
+       then  submits  the  extracted signature to the oops.kernel.org website
+       for statistical analysis and presentation to the Linux kernel develop‐
+       ers.
 
 OPTIONS
        --file filename
-              Parse the file denoted with filename as if it were /var/log/messages
+              Parse   the   file   denoted   with  filename  as  if  it  were
+              /var/log/messages
 
        --debug
               Enable debug mode
@@ -28,4 +32,4 @@ FILES
 AUTHOR
        kerneloops was written by Arjan van de Ven <arjan@linux.intel.com>.
 
-                                                             Dec 5, 2007                                               KERNELOOPS(8)
+                                 Dec 5, 2007                    KERNELOOPS(8)

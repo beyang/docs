@@ -1,4 +1,4 @@
-SHUTTER(1)                                       User Contributed Perl Documentation                                      SHUTTER(1)
+SHUTTER(1)           User Contributed Perl Documentation           SHUTTER(1)
 
 NAME
        Shutter - Feature-rich Screenshot Tool
@@ -10,9 +10,11 @@ COPYRIGHT
        Shutter is Copyright (C) by Mario Kemper and Shutter Team
 
 DESCRIPTION
-       Shutter is a feature-rich screenshot program. You can take a screenshot of a specific area, window, your whole screen, or
-       even of a website - apply different effects to it, draw on it to highlight points, and then upload to an image hosting site,
-       all within one window.
+       Shutter is a feature-rich screenshot program. You can take a
+       screenshot of a specific area, window, your whole screen, or even of a
+       website - apply different effects to it, draw on it to highlight
+       points, and then upload to an image hosting site, all within one
+       window.
 
 OPTIONS
        Example 1
@@ -29,19 +31,22 @@ OPTIONS
 
    CAPTURE MODE OPTIONS
        -s, --select=[X,Y,WIDTH,HEIGHT]
-               Capture an area of the screen. Providing X,Y,WIDTH,HEIGHT is optional.
+               Capture an area of the screen. Providing X,Y,WIDTH,HEIGHT is
+               optional.
 
        -f, --full
                Capture the entire screen.
 
        -w, --window=[NAME_PATTERN]
-               Select a window to capture. Providing a NAME_PATTERN (Perl-style regex) ist optional.
+               Select a window to capture. Providing a NAME_PATTERN (Perl-
+               style regex) ist optional.
 
        -a, --active
                Capture the current active window.
 
        --section
-               Capture a section. You will be able to select any child window by moving the mouse over it.
+               Capture a section. You will be able to select any child window
+               by moving the mouse over it.
 
        -m, --menu
                Capture a menu.
@@ -60,10 +65,12 @@ OPTIONS
                Load a specific profile on startup.
 
        -o, --output=FILENAME
-               Specify a filename to save the screenshot to (overwrites any profile-related setting).
+               Specify a filename to save the screenshot to (overwrites any
+               profile-related setting).
 
-               Supported image formats: You can save to any popular image format (e.g. jpeg, png, gif, bmp). Additionally it is
-               possible to save to pdf, ps or svg.
+               Supported image formats: You can save to any popular image
+               format (e.g. jpeg, png, gif, bmp). Additionally it is possible
+               to save to pdf, ps or svg.
 
                Please note: There are several wildcards available, like
 
@@ -79,10 +86,12 @@ OPTIONS
                 $R = random char (e.g. $RRRR = ag4r)
                 %NN = counter
 
-               The string is interpretted by strftime. See "man strftime" for more examples.
+               The string is interpretted by strftime. See "man strftime" for
+               more examples.
 
-               As an example: shutter -f -e -o './%y-%m-%d_$w_$h.png' would create a file named '11-10-28_1280_800.png' in the
-               current directory.
+               As an example: shutter -f -e -o './%y-%m-%d_$w_$h.png' would
+               create a file named '11-10-28_1280_800.png' in the current
+               directory.
 
        -d, --delay=SECONDS
                Wait n seconds before taking a screenshot.
@@ -112,18 +121,22 @@ OPTIONS
                Disables systray icon.
 
        -e, --exit_after_capture
-               Exit after the first capture has been made. This is useful when using Shutter in scripts.
+               Exit after the first capture has been made. This is useful
+               when using Shutter in scripts.
 
        -n, --no_session
-               Do not add the screenshot to the session. This is useful when using Shutter in scripts.
+               Do not add the screenshot to the session. This is useful when
+               using Shutter in scripts.
 
 BUG REPORTS
-       If you find a bug in Shutter, you should report it.  But first, you should make sure that it really is a bug, and that it
-       appears in the latest version of Shutter.
+       If you find a bug in Shutter, you should report it.  But first, you
+       should make sure that it really is a bug, and that it appears in the
+       latest version of Shutter.
 
-       The latest version is always available from: https://launchpad.net/shutter
+       The latest version is always available from:
+       https://launchpad.net/shutter
 
-       Once you have determined that a bug actually exists, please report it at launchpad:
-       https://bugs.launchpad.net/shutter/+filebug
+       Once you have determined that a bug actually exists, please report it
+       at launchpad: https://bugs.launchpad.net/shutter/+filebug
 
-perl v5.14.2                                                 2013-08-25                                                   SHUTTER(1)
+perl v5.14.2                      2013-08-25                       SHUTTER(1)

@@ -1,4 +1,4 @@
-SLOCK(1)                                             BSD General Commands Manual                                            SLOCK(1)
+SLOCK(1)                 BSD General Commands Manual                 SLOCK(1)
 
 NAME
      slock — simple X screen locker
@@ -7,14 +7,16 @@ SYNOPSIS
      slock [-v] [cmd [arg ...]]
 
 DESCRIPTION
-     slock is a simple X screen locker. If provided, cmd [arg ...] is executed after the screen has been locked.
+     slock is a simple X screen locker. If provided, cmd [arg ...] is exe‐
+     cuted after the screen has been locked.
 
 OPTIONS
      -v      Print version information to stdout and exit.
 
 SECURITY CONSIDERATIONS
-     To make sure a locked screen can not be bypassed by switching VTs or killing the X server with Ctrl+Alt+Backspace, it is recom‐
-     mended to disable both in xorg.conf(5) for maximum security:
+     To make sure a locked screen can not be bypassed by switching VTs or
+     killing the X server with Ctrl+Alt+Backspace, it is recommended to dis‐
+     able both in xorg.conf(5) for maximum security:
 
      Section "ServerFlags"
              Option "DontVTSwitch" "True"
@@ -25,7 +27,8 @@ EXAMPLES
      $ slock /usr/sbin/s2ram
 
 CUSTOMIZATION
-     slock can be customized by creating a custom config.h from config.def.h and (re)compiling the source code. This keeps it fast,
-     secure and simple.
+     slock can be customized by creating a custom config.h from config.def.h
+     and (re)compiling the source code. This keeps it fast, secure and sim‐
+     ple.
 
-                                                            April 6, 2020
+                                 May 25, 2020

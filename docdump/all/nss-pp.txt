@@ -1,0 +1,72 @@
+PP(1)                         NSS Security Tools                        PP(1)
+
+NAME
+       pp - Prints certificates, keys, crls, and pkcs7 files
+
+SYNOPSIS
+       pp -t type [-a] [-i input] [-o output] [-u] [-w]
+
+STATUS
+       This documentation is still work in progress. Please contribute to the
+       initial review in Mozilla NSS bug 836477[1]
+
+DESCRIPTION
+       pp pretty-prints private and public key, certificate,
+       certificate-request, pkcs7 or crl files
+
+OPTIONS
+       -t  type
+           specify the input, one of {private-key | public-key | certificate
+           | certificate-request | pkcs7 | crl}
+
+       -a
+           Input is in ascii encoded form (RFC1113)
+
+       -i  inputfile
+           Define an input file to use (default is stdin)
+
+       -o  outputfile
+           Define an output file to use (default is stdout)
+
+       -u
+           Use UTF-8 (default is to show non-ascii as .)
+
+       -w
+           Don't wrap long output lines
+
+ADDITIONAL RESOURCES
+       NSS is maintained in conjunction with PKI and security-related
+       projects through Mozilla and Fedora. The most closely-related project
+       is Dogtag PKI, with a project wiki at PKI Wiki[2].
+
+       For information specifically about NSS, the NSS project wiki is
+       located at Mozilla NSS site[3]. The NSS site relates directly to NSS
+       code changes and releases.
+
+       Mailing lists: pki-devel@redhat.com and pki-users@redhat.com
+
+       IRC: Freenode at #dogtag-pki
+
+AUTHORS
+       The NSS tools were written and maintained by developers with Netscape,
+       Red Hat, Sun, Oracle, Mozilla, and Google.
+
+       Authors: Elio Maldonado <emaldona@redhat.com>, Deon Lackey
+       <dlackey@redhat.com>.
+
+LICENSE
+       Licensed under the Mozilla Public License, v. 2.0. If a copy of the
+       MPL was not distributed with this file, You can obtain one at
+       http://mozilla.org/MPL/2.0/.
+
+NOTES
+        1. Mozilla NSS bug 836477
+           https://bugzilla.mozilla.org/show_bug.cgi?id=836477
+
+        2. PKI Wiki
+           http://pki.fedoraproject.org/wiki/
+
+        3. Mozilla NSS site
+           http://www.mozilla.org/projects/security/pki/nss/
+
+nss-tools                        29 July 2014                           PP(1)

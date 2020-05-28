@@ -1,4 +1,4 @@
-SPLITDIFF(1)                                                  Man pages                                                 SPLITDIFF(1)
+SPLITDIFF(1)                      Man pages                      SPLITDIFF(1)
 
 NAME
        splitdiff - separate out incremental patches
@@ -9,18 +9,21 @@ SYNOPSIS
        splitdiff {[--help] | [--version]}
 
 DESCRIPTION
-       If you have a patch file composed of several incremental patches, you can use splitdiff to separate them out. You may want to
-       do this in preparation for re-combining them with combinediff(1).
+       If you have a patch file composed of several incremental patches, you
+       can use splitdiff to separate them out. You may want to do this in
+       preparation for re-combining them with combinediff(1).
 
-       The effect of running splitdiff is to separate its input into a set of output files, with no output file patching the same
-       file more than once.
+       The effect of running splitdiff is to separate its input into a set of
+       output files, with no output file patching the same file more than
+       once.
 
 OPTIONS
        -a
            Split out every single file-level patch.
 
        -d
-           Create file names such as a_b.c.patch for a patch that modifies a/b.c.
+           Create file names such as a_b.c.patch for a patch that modifies
+           a/b.c.
 
        -D dir
            Write output files into subdirectory dir. Implies -d.
@@ -44,4 +47,4 @@ AUTHOR
        Tim Waugh <twaugh@redhat.com>
            Package maintainer
 
-patchutils                                                   4 Nov 2014                                                 SPLITDIFF(1)
+patchutils                        4 Nov 2014                     SPLITDIFF(1)

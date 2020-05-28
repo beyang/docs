@@ -1,28 +1,32 @@
-CMSUTIL(1)                                               NSS Security Tools                                               CMSUTIL(1)
+CMSUTIL(1)                    NSS Security Tools                   CMSUTIL(1)
 
 NAME
-       cmsutil - Performs basic cryptograpic operations, such as encryption and decryption, on Cryptographic Message Syntax (CMS)
-       messages.
+       cmsutil - Performs basic cryptograpic operations, such as encryption
+       and decryption, on Cryptographic Message Syntax (CMS) messages.
 
 SYNOPSIS
        cmsutil [options] [[arguments]]
 
 STATUS
-       This documentation is still work in progress. Please contribute to the initial review in Mozilla NSS bug 836477[1]
+       This documentation is still work in progress. Please contribute to the
+       initial review in Mozilla NSS bug 836477[1]
 
 DESCRIPTION
-       The cmsutil command-line uses the S/MIME Toolkit to perform basic operations, such as encryption and decryption, on
-       Cryptographic Message Syntax (CMS) messages.
+       The cmsutil command-line uses the S/MIME Toolkit to perform basic
+       operations, such as encryption and decryption, on Cryptographic
+       Message Syntax (CMS) messages.
 
-       To run cmsutil, type the command cmsutil option [arguments] where option and arguments are combinations of the options and
-       arguments listed in the following section. Each command takes one option. Each option may take zero or more arguments. To see
-       a usage string, issue the command without options.
+       To run cmsutil, type the command cmsutil option [arguments] where
+       option and arguments are combinations of the options and arguments
+       listed in the following section. Each command takes one option. Each
+       option may take zero or more arguments. To see a usage string, issue
+       the command without options.
 
 OPTIONS AND ARGUMENTS
        Options
 
-       Options specify an action. Option arguments modify an action. The options and arguments for the cmsutil command are defined
-       as follows:
+       Options specify an action. Option arguments modify an action. The
+       options and arguments for the cmsutil command are defined as follows:
 
        -C
            Encrypt a message.
@@ -53,9 +57,11 @@ OPTIONS AND ARGUMENTS
            Specify the key/certificate database directory (default is ".")
 
        -e envfile
-           Specify a file containing an enveloped message for a set of recipients to which you would like to send an encrypted
-           message. If this is the first encrypted message for that set of recipients, a new enveloped message will be created that
-           you can then use for future messages (encrypt only).
+           Specify a file containing an enveloped message for a set of
+           recipients to which you would like to send an encrypted message.
+           If this is the first encrypted message for that set of recipients,
+           a new enveloped message will be created that you can then use for
+           future messages (encrypt only).
 
        -f pwfile
            Use password file to set password on all PKCS#11 tokens.
@@ -91,8 +97,9 @@ OPTIONS AND ARGUMENTS
            Use password as key database password.
 
        -r recipient1,recipient2, ...
-           Specify list of recipients (email addresses) for an encrypted or enveloped message. For certificates-only message, list
-           of certificates to send.
+           Specify list of recipients (email addresses) for an encrypted or
+           enveloped message. For certificates-only message, list of
+           certificates to send.
 
        -T
            Suppress content in CMS message (sign only).
@@ -131,24 +138,29 @@ SEE ALSO
        certutil(1)
 
 ADDITIONAL RESOURCES
-       For information about NSS and other tools related to NSS (like JSS), check out the NSS project wiki at
-       http://www.mozilla.org/projects/security/pki/nss/. The NSS site relates directly to NSS code changes and releases.
+       For information about NSS and other tools related to NSS (like JSS),
+       check out the NSS project wiki at
+       http://www.mozilla.org/projects/security/pki/nss/. The NSS site
+       relates directly to NSS code changes and releases.
 
        Mailing lists: https://lists.mozilla.org/listinfo/dev-tech-crypto
 
        IRC: Freenode at #dogtag-pki
 
 AUTHORS
-       The NSS tools were written and maintained by developers with Netscape, Red Hat, Sun, Oracle, Mozilla, and Google.
+       The NSS tools were written and maintained by developers with Netscape,
+       Red Hat, Sun, Oracle, Mozilla, and Google.
 
-       Authors: Elio Maldonado <emaldona@redhat.com>, Deon Lackey <dlackey@redhat.com>.
+       Authors: Elio Maldonado <emaldona@redhat.com>, Deon Lackey
+       <dlackey@redhat.com>.
 
 LICENSE
-       Licensed under the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain
-       one at http://mozilla.org/MPL/2.0/.
+       Licensed under the Mozilla Public License, v. 2.0. If a copy of the
+       MPL was not distributed with this file, You can obtain one at
+       http://mozilla.org/MPL/2.0/.
 
 NOTES
         1. Mozilla NSS bug 836477
            https://bugzilla.mozilla.org/show_bug.cgi?id=836477
 
-nss-tools                                                    5 June 2014                                                  CMSUTIL(1)
+nss-tools                        5 June 2014                       CMSUTIL(1)
